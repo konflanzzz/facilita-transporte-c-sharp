@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EQbZc5DyFsGZU/5VVcCGFSop9WYeGf6FaDrODljPpS6cEOkAk44nW8A23SACtXVJ2Lq6Jrym/WLhRDOWMH027Q==",
+  "dgSpecHash": "dRxvy90fgeItNK/dAnpyvKY8CfUn0viMwRsQU4RdvmW0q3tflzJ9L5tP1i3CXlf6GHHAV7AR89feBHECUDybdw==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\facilitaTransporte\\facilitaTransporte\\facilitaTransporte.csproj",
+  "projectFilePath": "C:\\Users\\fernando.konflanz\\GitHub\\NSFacilitaTransporte\\facilitaTransporte\\facilitaTransporte.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fernando.konflanz\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

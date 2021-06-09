@@ -393,8 +393,7 @@ namespace NSFacilita_Transporte.src.Classes.CTe
         private string xJustField;
 
         /// <remarks/>
-        public TCodUfIBGE cUF
-        {
+        public TCodUfIBGE cUF {
             get
             {
                 return this.cUFField;
@@ -1023,11 +1022,11 @@ namespace NSFacilita_Transporte.src.Classes.CTe
 
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("1")]
-        Item1,
+        Producao,
 
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("2")]
-        Item2,
+        Homologacao,
     }
 
     /// <remarks/>

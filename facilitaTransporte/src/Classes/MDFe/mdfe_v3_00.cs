@@ -799,11 +799,11 @@ namespace NSFacilita_Transporte.src.Classes.MDFe
 
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("1")]
-        Item1,
+        Producao,
 
         /// <remarks/>
         [System.Xml.Serialization.XmlEnumAttribute("2")]
-        Item2,
+        Homologacao,
     }
 
     /// <remarks/>

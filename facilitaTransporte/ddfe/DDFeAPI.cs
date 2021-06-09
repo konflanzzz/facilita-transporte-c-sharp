@@ -80,9 +80,6 @@ namespace DDFeAPIClientCSharp
             };
 
             string json = JsonConvert.SerializeObject(parametros, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-
-
-
             string url = "https://ddfe.ns.eti.br/events/manif";
 
             gravaLinhaLog("[MANIFESTACAO_DADOS]");
@@ -121,8 +118,6 @@ namespace DDFeAPIClientCSharp
 
             MessageBox.Show(xMotivo);
         }
-
-
 
         // Faz a requisição de download de um unico documento 
         public static string downloadUnico(string CNPJInteressado, string caminho, string tpAmb, string nsu, string modelo,
@@ -297,7 +292,7 @@ namespace DDFeAPIClientCSharp
                 resposta = respostaJSON.motivo;
             }
 
-            MessageBox.Show(resposta);
+            //MessageBox.Show(resposta);
         }
 
         // Esta função salva um XML

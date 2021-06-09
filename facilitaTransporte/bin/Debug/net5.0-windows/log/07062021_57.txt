@@ -1,0 +1,8 @@
+07/06/2021 17:58 - [EMISSAO_SINCRONA_INICIO]
+07/06/2021 17:58 - [ENVIO_DADOS]
+07/06/2021 17:58 - 
+07/06/2021 17:58 - [ENVIO_RESPOSTA]
+07/06/2021 17:58 - {"status":-2,"motivo":"CT-e nao informado ou vazio"}
+07/06/2021 17:58 - [JSON_RETORNO]
+07/06/2021 17:58 - {"chCTe":"","statusEnvio":"-2","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"CT-e nao informado ou vazio","nsNRec":"","erros":null}
+07/06/2021 17:58 - [EMISSAO_SINCRONA_FIM]

@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\facilitaTransporte\\facilitaTransporte\\facilitaTransporte.csproj",
+      "projectUniqueName": "C:\\Users\\fernando.konflanz\\GitHub\\NSFacilitaTransporte\\facilitaTransporte\\facilitaTransporte.csproj",
       "projectName": "facilitaTransporte",
-      "projectPath": "C:\\Projetos\\facilitaTransporte\\facilitaTransporte\\facilitaTransporte.csproj",
+      "projectPath": "C:\\Users\\fernando.konflanz\\GitHub\\NSFacilitaTransporte\\facilitaTransporte\\facilitaTransporte.csproj",
       "packagesPath": "C:\\Users\\fernando.konflanz\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\facilitaTransporte\\facilitaTransporte\\obj\\",
+      "outputPath": "C:\\Users\\fernando.konflanz\\GitHub\\NSFacilitaTransporte\\facilitaTransporte\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fernando.konflanz\\AppData\\Roaming\\NuGet\\NuGet.Config",
