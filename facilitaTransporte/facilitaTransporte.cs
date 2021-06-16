@@ -10,7 +10,8 @@ using Newtonsoft.Json;
 
 namespace facilitaTransporte
 {
-    class facilitaTransporte {
+    class facilitaTransporte
+    {
 
         public static string emitirDocumentos()
         {
@@ -24,7 +25,7 @@ namespace facilitaTransporte
 
             // Terceiro passo: capturar os dados do objeto NFe e atribui-los ao objeto do CTe
             resposta = gerarCTe(NFeAutorizada);
-            
+
             return resposta;
         }
 
@@ -87,7 +88,7 @@ namespace facilitaTransporte
                 cMunFim = NFeRecebida.NFe.infNFe.dest.enderDest.cMun,
                 xMunFim = NFeRecebida.NFe.infNFe.dest.enderDest.xMun,
                 UFFim = (NSFacilita_Transporte.src.Classes.CTe.TUf)NFeRecebida.NFe.infNFe.dest.enderDest.UF,
-                retira = TCTeInfCteIdeRetira.Item1, //precisa ser informado pelo emitente
+                retira = TCTeInfCteIdeRetira.Item1, // input
                 indIEToma = TCTeInfCteIdeIndIEToma.Item9,
                 dhCont = NFeRecebida.NFe.infNFe.ide.dhCont,
                 xJust = NFeRecebida.NFe.infNFe.ide.xJust
@@ -95,12 +96,12 @@ namespace facilitaTransporte
 
             switch (NFeRecebida.NFe.infNFe.transp.modFrete)
             {
-                // Expedidor?
+                // Expedidor? // input // nao e possivel obter da NFe
 
-                // Recebedor?
+                // Recebedor? // input // nao e possivel obter da NFe
 
                 case TNFeInfNFeTranspModFrete.Item0: // Remetente - CIF
-                    
+
                     CTe.infCte.ide.Item = new TCTeInfCteIdeToma3
                     {
                         toma = TCTeInfCteIdeToma3Toma.Item0 // Remetente
@@ -118,8 +119,8 @@ namespace facilitaTransporte
                     break;
 
                 case TNFeInfNFeTranspModFrete.Item2: // Tereceiros
-                    
-                    CTe.infCte.ide.Item = new TCTeInfCteIdeToma4
+
+                    CTe.infCte.ide.Item = new TCTeInfCteIdeToma4 // input
                     {
                         toma = TCTeInfCteIdeToma4Toma.Item4, // Outros
                         ItemElementName = NSFacilita_Transporte.src.Classes.CTe.ItemChoiceType.CNPJ,
@@ -143,7 +144,7 @@ namespace facilitaTransporte
                     break;
 
                 case TNFeInfNFeTranspModFrete.Item3: // Transporte por conta do Remetente
-                    
+
                     CTe.infCte.ide.Item = new TCTeInfCteIdeToma3
                     {
                         toma = TCTeInfCteIdeToma3Toma.Item0 // Remetente
@@ -152,7 +153,7 @@ namespace facilitaTransporte
                     break;
 
                 case TNFeInfNFeTranspModFrete.Item4: // Transporte por conta do Destinatario
-                    
+
                     CTe.infCte.ide.Item = new TCTeInfCteIdeToma3
                     {
                         toma = TCTeInfCteIdeToma3Toma.Item3 // Destinatario
@@ -173,7 +174,6 @@ namespace facilitaTransporte
                     xLgr = NFeRecebida.NFe.infNFe.transp.transporta.xEnder,
                     xMun = NFeRecebida.NFe.infNFe.transp.transporta.xMun,
                     UF = (TUF_sem_EX)NFeRecebida.NFe.infNFe.transp.transporta.UF
-<<<<<<< HEAD
                 }
             };
 
@@ -198,7 +198,7 @@ namespace facilitaTransporte
                 }
             };
 
-            CTe.infCte.dest = new TCTeInfCteDest 
+            CTe.infCte.dest = new TCTeInfCteDest
             {
                 ItemElementName = (NSFacilita_Transporte.src.Classes.CTe.ItemChoiceType5)NFeRecebida.NFe.infNFe.dest.ItemElementName,
                 Item = NFeRecebida.NFe.infNFe.dest.Item,
@@ -223,129 +223,42 @@ namespace facilitaTransporte
 
             CTe.infCte.vPrest = new TCTeInfCteVPrest
             {
-                vTPrest = NFeRecebida.NFe.infNFe.total.ICMSTot.vFrete,
-                vRec = NFeRecebida.NFe.infNFe.total.ICMSTot.vFrete,
-                // Comp = new TCTeInfCteVPrestComp { vComp = "", xNome = ""} // quantidade de acordo com o valor do frete
+                vTPrest = "1000.00",
+                vRec = "1000.00",
             };
-            
+
+            CTe.infCte.vPrest.Comp[1] = new TCTeInfCteVPrestComp
+            {
+                vComp = "0.01",
+                xNome = "0.01"
+            };
+
+
             CTe.infCte.imp = new TCTeInfCteImp
             {
                 infAdFisco = NFeRecebida.NFe.infNFe.infAdic.infAdFisco,
-                vTotTrib = NFeRecebida.NFe.infNFe.total.ICMSTot.vTotTrib,
-
-                ICMSUFFim = new TCTeInfCteImpICMSUFFim
+                vTotTrib = "180.00",
+                ICMS = new TImp
                 {
-                    pICMSInter = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.pICMSInter.ToString(),
-                    pFCPUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.pFCPUFDest,
-                    pICMSUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.pICMSUFDest,
-                    vBCUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vBCUFDest,
-                    vFCPUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vFCPUFDest,
-                    vICMSUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vICMSUFDest,
-                    vICMSUFIni = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vICMSUFRemet,
+                    Item = new TImpICMS00
+                    {
+                        CST = TImpICMS00CST.Item00,
+                        pICMS = "18.00",
+                        vBC = "1000.00",
+                        vICMS = "180.00"
+                    },
                 }
             };
 
-=======
-                }
-            };
-
-            CTe.infCte.rem = new TCTeInfCteRem
+            object infCargaAux = new TCTeInfCteInfCTeNormInfCarga
             {
-                ItemElementName = (NSFacilita_Transporte.src.Classes.CTe.ItemChoiceType2)NFeRecebida.NFe.infNFe.emit.ItemElementName,
-                Item = NFeRecebida.NFe.infNFe.emit.Item,
-                IE = NFeRecebida.NFe.infNFe.emit.IE,
-                xNome = NFeRecebida.NFe.infNFe.emit.xNome,
-                enderReme = new NSFacilita_Transporte.src.Classes.CTe.TEndereco
-                {
-                    xLgr = NFeRecebida.NFe.infNFe.emit.enderEmit.xLgr,
-                    nro = NFeRecebida.NFe.infNFe.emit.enderEmit.nro,
-                    xBairro = NFeRecebida.NFe.infNFe.emit.enderEmit.xBairro,
-                    xMun = NFeRecebida.NFe.infNFe.emit.enderEmit.xMun,
-                    UF = (NSFacilita_Transporte.src.Classes.CTe.TUf)NFeRecebida.NFe.infNFe.emit.enderEmit.UF,
-                    cMun = NFeRecebida.NFe.infNFe.emit.enderEmit.cMun,
-                    xPais = "BRASIL",
-                    cPais = "1058",
-                    CEP = NFeRecebida.NFe.infNFe.emit.enderEmit.CEP,
-                    xCpl = NFeRecebida.NFe.infNFe.emit.enderEmit.xCpl
-                }
+                vCargaAverb = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
+                proPred = "DIVERSOS",
+                xOutCat = "DIVERSOS",
+                vCarga = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
+                //infQ = new TCTeInfCteInfCTeNormInfCargaInfQ [{ cUnid = TCTeInfCteInfCTeNormInfCargaInfQCUnid.Item00, qCarga = "2", tpMed = "1"}]
             };
 
-            CTe.infCte.dest = new TCTeInfCteDest 
-            {
-                ItemElementName = (NSFacilita_Transporte.src.Classes.CTe.ItemChoiceType5)NFeRecebida.NFe.infNFe.dest.ItemElementName,
-                Item = NFeRecebida.NFe.infNFe.dest.Item,
-                IE = NFeRecebida.NFe.infNFe.dest.IE,
-                xNome = NFeRecebida.NFe.infNFe.dest.xNome,
-                email = NFeRecebida.NFe.infNFe.dest.email,
-                ISUF = NFeRecebida.NFe.infNFe.dest.ISUF,
-                enderDest = new NSFacilita_Transporte.src.Classes.CTe.TEndereco
-                {
-                    xLgr = NFeRecebida.NFe.infNFe.dest.enderDest.xLgr,
-                    nro = NFeRecebida.NFe.infNFe.dest.enderDest.nro,
-                    xBairro = NFeRecebida.NFe.infNFe.dest.enderDest.xBairro,
-                    xCpl = NFeRecebida.NFe.infNFe.dest.enderDest.xCpl,
-                    cMun = NFeRecebida.NFe.infNFe.dest.enderDest.cMun,
-                    xMun = NFeRecebida.NFe.infNFe.dest.enderDest.xMun,
-                    UF = (NSFacilita_Transporte.src.Classes.CTe.TUf)NFeRecebida.NFe.infNFe.dest.enderDest.UF,
-                    cPais = NFeRecebida.NFe.infNFe.dest.enderDest.cPais,
-                    xPais = NFeRecebida.NFe.infNFe.dest.enderDest.xPais,
-                    CEP = NFeRecebida.NFe.infNFe.dest.enderDest.CEP
-                }
-            };
-
-            CTe.infCte.vPrest = new TCTeInfCteVPrest
-            {
-                vTPrest = NFeRecebida.NFe.infNFe.total.ICMSTot.vFrete,
-                vRec = NFeRecebida.NFe.infNFe.total.ICMSTot.vFrete,
-                // Comp = new TCTeInfCteVPrestComp { vComp = "", xNome = ""} // quantidade de acordo com o valor do frete
-            };
-            
-            CTe.infCte.imp = new TCTeInfCteImp
-            {
-                infAdFisco = NFeRecebida.NFe.infNFe.infAdic.infAdFisco,
-                vTotTrib = NFeRecebida.NFe.infNFe.total.ICMSTot.vTotTrib,
-
-                ICMSUFFim = new TCTeInfCteImpICMSUFFim
-                {
-                    pICMSInter = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.pICMSInter.ToString(),
-                    pFCPUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.pFCPUFDest,
-                    pICMSUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.pICMSUFDest,
-                    vBCUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vBCUFDest,
-                    vFCPUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vFCPUFDest,
-                    vICMSUFFim = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vICMSUFDest,
-                    vICMSUFIni = NFeRecebida.NFe.infNFe.det[1].imposto.ICMSUFDest.vICMSUFRemet,
-                }
-            };
-
->>>>>>> 0a1e5b1cdf5dd91c1bba9c9a8120711810a76b80
-            CTe.infCte.imp.ICMS = new TImp
-            {
-                Item = "ICMS00" // Input
-            };
-
-            CTe.infCte.Item = new TCTeInfCteInfCTeNorm
-            {
-                infCarga = new TCTeInfCteInfCTeNormInfCarga
-                {
-                    vCarga = NFeRecebida.NFe.infNFe.total.ICMSTot.vProd,
-                    proPred = "DIVERSOS",
-                    xOutCat = "DIVERSOS",
-                    vCargaAverb = NFeRecebida.NFe.infNFe.total.ICMSTot.vSeg, // input
-<<<<<<< HEAD
-                    // infQ = new TCTeInfCteInfCTeNormInfCargaInfQ[1], // array
-                },
-               // infDoc = new TCTeInfCteInfCTeNormInfDoc[1], // array
-            };
-
-
-
-
-=======
-                }
-            };
-
-
->>>>>>> 0a1e5b1cdf5dd91c1bba9c9a8120711810a76b80
             string CTeJSON = JsonConvert.SerializeObject(CTe);//String do cte serializado
             //respostaEmissaoCTe = NSSuite.emitirCTeSincrono(CTeJSON, "57", "json", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte", true, false);
             return CTeJSON;
@@ -363,7 +276,7 @@ namespace facilitaTransporte
             };
 
             string MDFeJSON = ""; //String do mdfe serializado
-            respostaEmissaoMDFe = NSSuite.emitirMDFeSincrono(MDFeJSON, "json", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte",false,false);
+            respostaEmissaoMDFe = NSSuite.emitirMDFeSincrono(MDFeJSON, "json", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte", false, false);
             return respostaEmissaoMDFe;
 
         }
