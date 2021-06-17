@@ -7,6 +7,7 @@ using NSFacilita_Transporte.src.Classes.MDFe;
 using NSFacilita_Transporte.src.Classes.NFeAuth;
 using DDFeAPIClientCSharp;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace facilitaTransporte
 {
@@ -57,6 +58,7 @@ namespace facilitaTransporte
 
             CTe.infCte = new TCTeInfCte
             {
+                imp = new TCTeInfCteImp(),
                 versao = "3.00"
             };
 
@@ -233,6 +235,27 @@ namespace facilitaTransporte
                 xNome = "0.01"
             };
 
+            TCTeInfCteInfCTeNormInfCargaInfQ[] infQArray = new TCTeInfCteInfCTeNormInfCargaInfQ[1];
+            TCTeInfCteInfCTeNormInfCargaInfQ infQ1 = new TCTeInfCteInfCTeNormInfCargaInfQ
+            {
+                cUnid = TCTeInfCteInfCTeNormInfCargaInfQCUnid.Item01,
+                tpMed = "KILOS",
+                qCarga = "15000.00"
+            };
+
+            infQArray[1] = infQ1;
+
+            TCTeInfCteInfCTeNormInfCarga infCargaAux = new TCTeInfCteInfCTeNormInfCarga
+            {
+                vCargaAverb = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
+                proPred = "DIVERSOS",
+                xOutCat = "DIVERSOS",
+                vCarga = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
+                infQ = infQArray
+            };
+
+            CTe.infCte.Item = new TCTeInfCteInfCTeNormInfCarga();
+            CTe.infCte.Item = infCargaAux;
 
             CTe.infCte.imp = new TCTeInfCteImp
             {
@@ -248,15 +271,6 @@ namespace facilitaTransporte
                         vICMS = "180.00"
                     },
                 }
-            };
-
-            object infCargaAux = new TCTeInfCteInfCTeNormInfCarga
-            {
-                vCargaAverb = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
-                proPred = "DIVERSOS",
-                xOutCat = "DIVERSOS",
-                vCarga = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
-                //infQ = new TCTeInfCteInfCTeNormInfCargaInfQ [{ cUnid = TCTeInfCteInfCTeNormInfCargaInfQCUnid.Item00, qCarga = "2", tpMed = "1"}]
             };
 
             string CTeJSON = JsonConvert.SerializeObject(CTe);//String do cte serializado
