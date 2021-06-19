@@ -1,0 +1,1278 @@
+18/06/2021 17:50 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 17:50 - [ENVIO_DADOS]
+18/06/2021 17:50 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP />
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T17:50:41-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>3</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ESTR BENTO OSVALDO TRISCH 777</xLgr>
+        <xMun>CAXIAS DO SUL</xMun>
+        <UF>RS</UF>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>ELISABETE DA SILVA DUMMER</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>15000.00</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05T11:32:00-03:00</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>NAO DEFINIDO</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 17:50 - [ENVIO_RESPOSTA]
+18/06/2021 17:50 - {"status":-4,"motivo":"CTe invalido de acordo com a validacao contra schema","erros":["O campo 'CFOP' foi preenchido incorretamente com o valor ' '. Este campo deve ser preenchido com numeros e conter exatamente 4 caracteres. (cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[123567][0-9]([0-9][1-9]|[1-9][0-9])' for type 'TCfop'.)","O campo 'tpEmis' foi preenchido incorretamente com o valor '3'. Este campo deve ser preenchido com um dos seguintes valores: 1, 4, 5, 7, 8. (cvc-enumeration-valid: Value '3' is not facet-valid with respect to enumeration '[1, 4, 5, 7, 8]'. It must be a value from the enumeration.)","O campo 'nro' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xMun'Este campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xMun'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'qCarga' foi preenchido incorretamente com o valor '15000.00'. Este campo pode ter 11 casas de grandeza e 4 decimais, podendo ser preenchido com '0.0000'. Este campo e obrigatorio. (cvc-pattern-valid: Value '15000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'.)","O campo 'dEmi' foi preenchido incorretamente com o valor '2021-05-05T11:32:00-03:00'. Este campo deve ser preenchido com data no formato 'AAAA-MM-DD  (Ex.: 2020-01-31)'. Este campo e obrigatorio. (cvc-pattern-valid: Value '2021-05-05T11:32:00-03:00' is not facet-valid with respect to pattern '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))' for type 'TData'.)","O campo 'nPeso' foi preenchido incorretamente com o valor 'NAO DEFINIDO'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value 'NAO DEFINIDO' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 17:50 - [JSON_RETORNO]
+18/06/2021 17:50 - {"chCTe":"","statusEnvio":"-4","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"CTe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'CFOP' foi preenchido incorretamente com o valor ' '. Este campo deve ser preenchido com numeros e conter exatamente 4 caracteres. (cvc-pattern-valid: Value '' is not facet-valid with respect to pattern '[123567][0-9]([0-9][1-9]|[1-9][0-9])' for type 'TCfop'.)","O campo 'tpEmis' foi preenchido incorretamente com o valor '3'. Este campo deve ser preenchido com um dos seguintes valores: 1, 4, 5, 7, 8. (cvc-enumeration-valid: Value '3' is not facet-valid with respect to enumeration '[1, 4, 5, 7, 8]'. It must be a value from the enumeration.)","O campo 'nro' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xMun'Este campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xMun'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'qCarga' foi preenchido incorretamente com o valor '15000.00'. Este campo pode ter 11 casas de grandeza e 4 decimais, podendo ser preenchido com '0.0000'. Este campo e obrigatorio. (cvc-pattern-valid: Value '15000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'.)","O campo 'dEmi' foi preenchido incorretamente com o valor '2021-05-05T11:32:00-03:00'. Este campo deve ser preenchido com data no formato 'AAAA-MM-DD  (Ex.: 2020-01-31)'. Este campo e obrigatorio. (cvc-pattern-valid: Value '2021-05-05T11:32:00-03:00' is not facet-valid with respect to pattern '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))' for type 'TData'.)","O campo 'nPeso' foi preenchido incorretamente com o valor 'NAO DEFINIDO'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value 'NAO DEFINIDO' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 17:50 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 17:52 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 17:52 - [ENVIO_DADOS]
+18/06/2021 17:52 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T17:52:48-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ESTR BENTO OSVALDO TRISCH 777</xLgr>
+        <xMun>CAXIAS DO SUL</xMun>
+        <UF>RS</UF>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>ELISABETE DA SILVA DUMMER</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>15000.00</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05T11:32:00-03:00</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>NAO DEFINIDO</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 17:52 - [ENVIO_RESPOSTA]
+18/06/2021 17:52 - {"status":-4,"motivo":"CTe invalido de acordo com a validacao contra schema","erros":["O campo 'xMun' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informadoEste campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"http://www.portalfiscal.inf.br/cte\":xMun}'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'qCarga' foi preenchido incorretamente com o valor '15000.00'. Este campo pode ter 11 casas de grandeza e 4 decimais, podendo ser preenchido com '0.0000'. Este campo e obrigatorio. (cvc-pattern-valid: Value '15000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'.)","O campo 'dEmi' foi preenchido incorretamente com o valor '2021-05-05T11:32:00-03:00'. Este campo deve ser preenchido com data no formato 'AAAA-MM-DD  (Ex.: 2020-01-31)'. Este campo e obrigatorio. (cvc-pattern-valid: Value '2021-05-05T11:32:00-03:00' is not facet-valid with respect to pattern '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))' for type 'TData'.)","O campo 'nPeso' foi preenchido incorretamente com o valor 'NAO DEFINIDO'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value 'NAO DEFINIDO' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 17:52 - [JSON_RETORNO]
+18/06/2021 17:52 - {"chCTe":"","statusEnvio":"-4","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"CTe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'xMun' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informadoEste campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"http://www.portalfiscal.inf.br/cte\":xMun}'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'qCarga' foi preenchido incorretamente com o valor '15000.00'. Este campo pode ter 11 casas de grandeza e 4 decimais, podendo ser preenchido com '0.0000'. Este campo e obrigatorio. (cvc-pattern-valid: Value '15000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'.)","O campo 'dEmi' foi preenchido incorretamente com o valor '2021-05-05T11:32:00-03:00'. Este campo deve ser preenchido com data no formato 'AAAA-MM-DD  (Ex.: 2020-01-31)'. Este campo e obrigatorio. (cvc-pattern-valid: Value '2021-05-05T11:32:00-03:00' is not facet-valid with respect to pattern '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))' for type 'TData'.)","O campo 'nPeso' foi preenchido incorretamente com o valor 'NAO DEFINIDO'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value 'NAO DEFINIDO' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 17:52 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 17:55 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 17:55 - [ENVIO_DADOS]
+18/06/2021 17:55 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T17:53:54-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ESTR BENTO OSVALDO TRISCH 777</xLgr>
+        <xMun>CAXIAS DO SUL</xMun>
+        <UF>RS</UF>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>ELISABETE DA SILVA DUMMER</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>15000.00</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05T11:32:00-03:00</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>NAO DEFINIDO</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 17:55 - [ENVIO_RESPOSTA]
+18/06/2021 17:55 - {"status":-4,"motivo":"CTe invalido de acordo com a validacao contra schema","erros":["O campo 'xMun' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informadoEste campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"http://www.portalfiscal.inf.br/cte\":xMun}'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'qCarga' foi preenchido incorretamente com o valor '15000.00'. Este campo pode ter 11 casas de grandeza e 4 decimais, podendo ser preenchido com '0.0000'. Este campo e obrigatorio. (cvc-pattern-valid: Value '15000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'.)","O campo 'dEmi' foi preenchido incorretamente com o valor '2021-05-05T11:32:00-03:00'. Este campo deve ser preenchido com data no formato 'AAAA-MM-DD  (Ex.: 2020-01-31)'. Este campo e obrigatorio. (cvc-pattern-valid: Value '2021-05-05T11:32:00-03:00' is not facet-valid with respect to pattern '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))' for type 'TData'.)","O campo 'nPeso' foi preenchido incorretamente com o valor 'NAO DEFINIDO'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value 'NAO DEFINIDO' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 17:55 - [JSON_RETORNO]
+18/06/2021 17:55 - {"chCTe":"","statusEnvio":"-4","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"CTe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'xMun' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informadoEste campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"http://www.portalfiscal.inf.br/cte\":xMun}'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'qCarga' foi preenchido incorretamente com o valor '15000.00'. Este campo pode ter 11 casas de grandeza e 4 decimais, podendo ser preenchido com '0.0000'. Este campo e obrigatorio. (cvc-pattern-valid: Value '15000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'.)","O campo 'dEmi' foi preenchido incorretamente com o valor '2021-05-05T11:32:00-03:00'. Este campo deve ser preenchido com data no formato 'AAAA-MM-DD  (Ex.: 2020-01-31)'. Este campo e obrigatorio. (cvc-pattern-valid: Value '2021-05-05T11:32:00-03:00' is not facet-valid with respect to pattern '(((20(([02468][048])|([13579][26]))-02-29))|(20[0-9][0-9])-((((0[1-9])|(1[0-2]))-((0[1-9])|(1\\d)|(2[0-8])))|((((0[13578])|(1[02]))-31)|(((0[1,3-9])|(1[0-2]))-(29|30)))))' for type 'TData'.)","O campo 'nPeso' foi preenchido incorretamente com o valor 'NAO DEFINIDO'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value 'NAO DEFINIDO' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 17:55 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 18:07 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 18:07 - [ENVIO_DADOS]
+18/06/2021 18:07 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T18:06:50-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ESTR BENTO OSVALDO TRISCH 777</xLgr>
+        <xMun>CAXIAS DO SUL</xMun>
+        <UF>RS</UF>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>ELISABETE DA SILVA DUMMER</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.0000</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 18:07 - [ENVIO_RESPOSTA]
+18/06/2021 18:07 - {"status":-4,"motivo":"CTe invalido de acordo com a validacao contra schema","erros":["O campo 'nro' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xMun'Este campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xMun'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'nPeso' foi preenchido incorretamente com o valor '13000.0000'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value '13000.0000' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 18:07 - [JSON_RETORNO]
+18/06/2021 18:07 - {"chCTe":"","statusEnvio":"-4","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"CTe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'nro' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xMun'Este campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xMun'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'nPeso' foi preenchido incorretamente com o valor '13000.0000'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value '13000.0000' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 18:07 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 18:09 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 18:09 - [ENVIO_DADOS]
+18/06/2021 18:09 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T18:08:55-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ESTR BENTO OSVALDO TRISCH 777</xLgr>
+        <xMun>CAXIAS DO SUL</xMun>
+        <UF>RS</UF>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>ELISABETE DA SILVA DUMMER</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.00</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 18:09 - [ENVIO_RESPOSTA]
+18/06/2021 18:09 - {"status":-4,"motivo":"CTe invalido de acordo com a validacao contra schema","erros":["O campo 'xMun' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informadoEste campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"http://www.portalfiscal.inf.br/cte\":xMun}'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'nPeso' foi preenchido incorretamente com o valor '13000.00'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value '13000.00' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 18:09 - [JSON_RETORNO]
+18/06/2021 18:09 - {"chCTe":"","statusEnvio":"-4","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"CTe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'xMun' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informadoEste campo deve ser preenchido com letras ou numeros e conter no minimo 1 e no maximo 60 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"http://www.portalfiscal.inf.br/cte\":xMun}'. One of '{\"http://www.portalfiscal.inf.br/cte\":nro}' is expected.)","O campo 'nPeso' foi preenchido incorretamente com o valor '13000.00'. Este campo deve ser preenchido com numeros contendo no maximo 15 casas inteiras e 3 decimais. (cvc-pattern-valid: Value '13000.00' is not facet-valid with respect to pattern '0\\.[1-9]{1}[0-9]{2}|0\\.[0-9]{2}[1-9]{1}|0\\.[0-9]{1}[1-9]{1}[0-9]{1}|[1-9]{1}[0-9]{0,11}(\\.[0-9]{3})?' for type 'TDec_1203Opc'.)"]}
+18/06/2021 18:09 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 18:14 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 18:14 - [ENVIO_DADOS]
+18/06/2021 18:14 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T18:14:16-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ROD RST 470 KM 221 BLOCO A</xLgr>
+        <nro>221</nro>
+        <xBairro>CAMAQUA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>GARIBALDI</xMun>
+        <CEP>96180000</CEP>
+        <UF>RS</UF>
+        <fone>5434638266</fone>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>ELISABETE DA SILVA DUMMER</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.000</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 18:14 - [ENVIO_RESPOSTA]
+18/06/2021 18:14 - {"status":200,"motivo":"CT-e enviado para Sefaz","chCTe":"43210607364617000135570000000022191000003301","nsNRec":14619690}
+18/06/2021 18:14 - [CONSULTA_DADOS]
+18/06/2021 18:14 - {"CNPJ":"07364617000135","nsNRec":"14619690","tpAmb":"2"}
+18/06/2021 18:14 - [CONSULTA_RESPOSTA]
+18/06/2021 18:14 - {"status":200,"motivo":"Consulta realizada com sucesso","chCTe":"43210607364617000135570000000022191000003301","cStat":646,"xMotivo":"Rejeição: CT-e emitido em ambiente de homologação com Razão Social do remetente diferente de CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL"}
+18/06/2021 18:14 - [JSON_RETORNO]
+18/06/2021 18:14 - {"chCTe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"646","nProt":"","motivo":"Rejeição: CT-e emitido em ambiente de homologação com Razão Social do remetente diferente de CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL","nsNRec":"14619690","erros":null}
+18/06/2021 18:14 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 18:16 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 18:16 - [ENVIO_DADOS]
+18/06/2021 18:16 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T18:16:19-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ROD RST 470 KM 221 BLOCO A</xLgr>
+        <nro>221</nro>
+        <xBairro>CAMAQUA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>GARIBALDI</xMun>
+        <CEP>96180000</CEP>
+        <UF>RS</UF>
+        <fone>5434638266</fone>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.000</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 18:16 - [ENVIO_RESPOSTA]
+18/06/2021 18:16 - {"status":200,"motivo":"CT-e enviado para Sefaz","chCTe":"43210607364617000135570000000022191000003301","nsNRec":14619727}
+18/06/2021 18:16 - [CONSULTA_DADOS]
+18/06/2021 18:16 - {"CNPJ":"07364617000135","nsNRec":"14619727","tpAmb":"2"}
+18/06/2021 18:16 - [CONSULTA_RESPOSTA]
+18/06/2021 18:16 - {"status":200,"motivo":"Consulta realizada com sucesso","chCTe":"43210607364617000135570000000022191000003301","cStat":649,"xMotivo":"Rejeição: CT-e emitido em ambiente de homologação com Razão Social do destinatário diferente de CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL"}
+18/06/2021 18:16 - [JSON_RETORNO]
+18/06/2021 18:16 - {"chCTe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"649","nProt":"","motivo":"Rejeição: CT-e emitido em ambiente de homologação com Razão Social do destinatário diferente de CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL","nsNRec":"14619727","erros":null}
+18/06/2021 18:16 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 18:17 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 18:17 - [ENVIO_DADOS]
+18/06/2021 18:17 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T18:17:24-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ROD RST 470 KM 221 BLOCO A</xLgr>
+        <nro>221</nro>
+        <xBairro>CAMAQUA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>GARIBALDI</xMun>
+        <CEP>96180000</CEP>
+        <UF>RS</UF>
+        <fone>5434638266</fone>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.000</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 18:17 - [ENVIO_RESPOSTA]
+18/06/2021 18:17 - {"status":200,"motivo":"CT-e enviado para Sefaz","chCTe":"43210607364617000135570000000022191000003301","nsNRec":14619737}
+18/06/2021 18:17 - [CONSULTA_DADOS]
+18/06/2021 18:17 - {"CNPJ":"07364617000135","nsNRec":"14619737","tpAmb":"2"}
+18/06/2021 18:17 - [CONSULTA_RESPOSTA]
+18/06/2021 18:17 - {"status":200,"motivo":"Consulta realizada com sucesso","chCTe":"43210607364617000135570000000022191000003301","cStat":649,"xMotivo":"Rejeição: CT-e emitido em ambiente de homologação com Razão Social do destinatário diferente de CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL"}
+18/06/2021 18:17 - [JSON_RETORNO]
+18/06/2021 18:17 - {"chCTe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"649","nProt":"","motivo":"Rejeição: CT-e emitido em ambiente de homologação com Razão Social do destinatário diferente de CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL","nsNRec":"14619737","erros":null}
+18/06/2021 18:17 - [EMISSAO_SINCRONA_FIM]
+18/06/2021 18:19 - [EMISSAO_SINCRONA_INICIO]
+18/06/2021 18:19 - [ENVIO_DADOS]
+18/06/2021 18:19 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2219</nCT>
+      <dhEmi>2021-06-18T18:19:48-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ROD RST 470 KM 221 BLOCO A</xLgr>
+        <nro>221</nro>
+        <xBairro>CAMAQUA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>GARIBALDI</xMun>
+        <CEP>96180000</CEP>
+        <UF>RS</UF>
+        <fone>5434638266</fone>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.000</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+18/06/2021 18:19 - [ENVIO_RESPOSTA]
+18/06/2021 18:19 - {"status":200,"motivo":"CT-e enviado para Sefaz","chCTe":"43210607364617000135570000000022191000003301","nsNRec":14619774}
+18/06/2021 18:19 - [CONSULTA_DADOS]
+18/06/2021 18:19 - {"CNPJ":"07364617000135","nsNRec":"14619774","tpAmb":"2"}
+18/06/2021 18:19 - [CONSULTA_RESPOSTA]
+18/06/2021 18:19 - {"status":200,"motivo":"Consulta realizada com sucesso","chCTe":"43210607364617000135570000000022191000003301","cStat":539,"xMotivo":"Rejeicao: Duplicidade de CT-e, com diferença na Chave de Acesso  [chCTe:43210507364617000135570000000022191000003308][nProt:143210000348645][dhAut:2021-05-31T15:44:15-03:00]"}
+18/06/2021 18:19 - [JSON_RETORNO]
+18/06/2021 18:19 - {"chCTe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"539","nProt":"","motivo":"Rejeicao: Duplicidade de CT-e, com diferença na Chave de Acesso  [chCTe:43210507364617000135570000000022191000003308][nProt:143210000348645][dhAut:2021-05-31T15:44:15-03:00]","nsNRec":"14619774","erros":null}
+18/06/2021 18:19 - [EMISSAO_SINCRONA_FIM]
