@@ -1,0 +1,295 @@
+21/06/2021 17:29 - [EMISSAO_SINCRONA_INICIO]
+21/06/2021 17:29 - [ENVIO_DADOS]
+21/06/2021 17:29 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2221</nCT>
+      <dhEmi>2021-06-21T17:29:21-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ROD RST 470 KM 221 BLOCO A</xLgr>
+        <nro>221</nro>
+        <xBairro>CAMAQUA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>GARIBALDI</xMun>
+        <CEP>96180000</CEP>
+        <UF>RS</UF>
+        <fone>5434638266</fone>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.000</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+21/06/2021 17:29 - [ENVIO_RESPOSTA]
+21/06/2021 17:29 - {"status":200,"motivo":"CT-e enviado para Sefaz","chCTe":"43210607364617000135570000000022211000003300","nsNRec":14653809}
+21/06/2021 17:29 - [CONSULTA_DADOS]
+21/06/2021 17:29 - {"CNPJ":"07364617000135","nsNRec":"14653809","tpAmb":"2"}
+21/06/2021 17:29 - [CONSULTA_RESPOSTA]
+21/06/2021 17:29 - {"status":200,"motivo":"Consulta realizada com sucesso","chCTe":"43210607364617000135570000000022211000003300","cStat":539,"xMotivo":"Rejeicao: Duplicidade de CT-e, com diferença na Chave de Acesso  [chCTe:43210507364617000135570000000022211000022211][nProt:143210000324978][dhAut:2021-05-10T10:55:31-03:00]"}
+21/06/2021 17:29 - [JSON_RETORNO]
+21/06/2021 17:29 - {"chCTe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"539","nProt":"","motivo":"Rejeicao: Duplicidade de CT-e, com diferença na Chave de Acesso  [chCTe:43210507364617000135570000000022211000022211][nProt:143210000324978][dhAut:2021-05-10T10:55:31-03:00]","nsNRec":"14653809","erros":null}
+21/06/2021 17:29 - [EMISSAO_SINCRONA_FIM]
+21/06/2021 17:33 - [EMISSAO_SINCRONA_INICIO]
+21/06/2021 17:33 - [ENVIO_DADOS]
+21/06/2021 17:33 - <?xml version="1.0" encoding="utf-16"?>
+<CTe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/cte">
+  <infCte versao="3.00">
+    <ide>
+      <cUF>43</cUF>
+      <cCT>00000330</cCT>
+      <CFOP>5353</CFOP>
+      <natOp>IMPORTACAO</natOp>
+      <mod>57</mod>
+      <serie>0</serie>
+      <nCT>2222</nCT>
+      <dhEmi>2021-06-21T17:32:44-03:00</dhEmi>
+      <tpImp>2</tpImp>
+      <tpEmis>1</tpEmis>
+      <cDV />
+      <tpAmb>2</tpAmb>
+      <tpCTe>0</tpCTe>
+      <procEmi>0</procEmi>
+      <verProc>1.02</verProc>
+      <cMunEnv>4306056</cMunEnv>
+      <xMunEnv>CRISTAL</xMunEnv>
+      <UFEnv>RS</UFEnv>
+      <modal>01</modal>
+      <tpServ>0</tpServ>
+      <cMunIni>4306056</cMunIni>
+      <xMunIni>CRISTAL</xMunIni>
+      <UFIni>RS</UFIni>
+      <cMunFim>4306056</cMunFim>
+      <xMunFim>CRISTAL</xMunFim>
+      <UFFim>RS</UFFim>
+      <retira>1</retira>
+      <indIEToma>9</indIEToma>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>TRANSPORTADORA TESTE</xNome>
+      <xFant>TRANSPORTADORA TESTE</xFant>
+      <enderEmit>
+        <xLgr>ROD RST 470 KM 221 BLOCO A</xLgr>
+        <nro>221</nro>
+        <xBairro>CAMAQUA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>GARIBALDI</xMun>
+        <CEP>96180000</CEP>
+        <UF>RS</UF>
+        <fone>5434638266</fone>
+      </enderEmit>
+    </emit>
+    <rem>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderReme>
+        <xLgr>AVEST PARAISO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderReme>
+    </rem>
+    <dest>
+      <CPF>63354950072</CPF>
+      <IE>2631026203</IE>
+      <xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome>
+      <enderDest>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>S/N</nro>
+        <xBairro>TERCEIRO</xBairro>
+        <cMun>4306056</cMun>
+        <xMun>CRISTAL</xMun>
+        <CEP>96195000</CEP>
+        <UF>RS</UF>
+        <cPais>1058</cPais>
+        <xPais>BRASIL</xPais>
+      </enderDest>
+    </dest>
+    <vPrest>
+      <vTPrest>1000.00</vTPrest>
+      <vRec>1000.00</vRec>
+    </vPrest>
+    <imp>
+      <ICMS>
+        <ICMS00>
+          <CST>00</CST>
+          <vBC>1000.00</vBC>
+          <pICMS>18.00</pICMS>
+          <vICMS>180.00</vICMS>
+        </ICMS00>
+      </ICMS>
+      <vTotTrib>180.00</vTotTrib>
+      <infAdFisco>Teste de emissao integra</infAdFisco>
+    </imp>
+    <infCTeNorm>
+      <infCarga>
+        <vCarga>310.00</vCarga>
+        <proPred>DIVERSOS</proPred>
+        <xOutCat>DIVERSOS</xOutCat>
+        <infQ>
+          <cUnid>01</cUnid>
+          <tpMed>KILOS</tpMed>
+          <qCarga>13000.0000</qCarga>
+        </infQ>
+        <vCargaAverb>310.00</vCargaAverb>
+      </infCarga>
+      <infDoc>
+        <infNF>
+          <mod>01</mod>
+          <serie>920</serie>
+          <nDoc>926</nDoc>
+          <dEmi>2021-05-05</dEmi>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vProd>320.00</vProd>
+          <vNF>310.00</vNF>
+          <nCFOP>5405</nCFOP>
+          <nPeso>13000.000</nPeso>
+        </infNF>
+      </infDoc>
+      <infModal versaoModal="3.00">
+        <rodo>
+          <RNTRC>09549369</RNTRC>
+        </rodo>
+      </infModal>
+    </infCTeNorm>
+  </infCte>
+</CTe>
+21/06/2021 17:33 - [ENVIO_RESPOSTA]
+21/06/2021 17:33 - {"status":200,"motivo":"CT-e enviado para Sefaz","chCTe":"43210607364617000135570000000022221000003307","nsNRec":14653862}
+21/06/2021 17:33 - [CONSULTA_DADOS]
+21/06/2021 17:33 - {"CNPJ":"07364617000135","nsNRec":"14653862","tpAmb":"2"}
+21/06/2021 17:33 - [CONSULTA_RESPOSTA]
+21/06/2021 17:33 - {"status":200,"motivo":"Consulta realizada com sucesso","chCTe":"43210607364617000135570000000022221000003307","cStat":100,"xMotivo":"Autorizado o uso do CT-e","nProt":"143210000364396","dhRecbto":"2021-06-21T17:33:34-03:00","xml":"<?xml version=\"1.0\" encoding=\"utf-8\"?><cteProc versao=\"3.00\" xmlns=\"http://www.portalfiscal.inf.br/cte\"><CTe xmlns=\"http://www.portalfiscal.inf.br/cte\"><infCte versao=\"3.00\" Id=\"CTe43210607364617000135570000000022221000003307\"><ide><cUF>43</cUF><cCT>00000330</cCT><CFOP>5353</CFOP><natOp>IMPORTACAO</natOp><mod>57</mod><serie>0</serie><nCT>2222</nCT><dhEmi>2021-06-21T17:32:44-03:00</dhEmi><tpImp>2</tpImp><tpEmis>1</tpEmis><cDV>7</cDV><tpAmb>2</tpAmb><tpCTe>0</tpCTe><procEmi>0</procEmi><verProc>1.02|NS_API</verProc><cMunEnv>4306056</cMunEnv><xMunEnv>CRISTAL</xMunEnv><UFEnv>RS</UFEnv><modal>01</modal><tpServ>0</tpServ><cMunIni>4306056</cMunIni><xMunIni>CRISTAL</xMunIni><UFIni>RS</UFIni><cMunFim>4306056</cMunFim><xMunFim>CRISTAL</xMunFim><UFFim>RS</UFFim><retira>1</retira><indIEToma>9</indIEToma><toma3><toma>0</toma></toma3></ide><emit><CNPJ>07364617000135</CNPJ><IE>0170108708</IE><xNome>TRANSPORTADORA TESTE</xNome><xFant>TRANSPORTADORA TESTE</xFant><enderEmit><xLgr>ROD RST 470 KM 221 BLOCO A</xLgr><nro>221</nro><xBairro>CAMAQUA</xBairro><cMun>4303509</cMun><xMun>GARIBALDI</xMun><CEP>96180000</CEP><UF>RS</UF><fone>5434638266</fone></enderEmit></emit><rem><CPF>63354950072</CPF><IE>2631026203</IE><xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome><enderReme><xLgr>AVEST PARAISO</xLgr><nro>S/N</nro><xBairro>TERCEIRO</xBairro><cMun>4306056</cMun><xMun>CRISTAL</xMun><CEP>96195000</CEP><UF>RS</UF><cPais>1058</cPais><xPais>BRASIL</xPais></enderReme></rem><dest><CPF>63354950072</CPF><IE>2631026203</IE><xNome>CT-E EMITIDO EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL</xNome><enderDest><xLgr>AV ANTONIO DURO</xLgr><nro>S/N</nro><xBairro>TERCEIRO</xBairro><cMun>4306056</cMun><xMun>CRISTAL</xMun><CEP>96195000</CEP><UF>RS</UF><cPais>1058</cPais><xPais>BRASIL</xPais></enderDest></dest><vPrest><vTPrest>1000.00</vTPrest><vRec>1000.00</vRec></vPrest><imp><ICMS><ICMS00><CST>00</CST><vBC>1000.00</vBC><pICMS>18.00</pICMS><vICMS>180.00</vICMS></ICMS00></ICMS><vTotTrib>180.00</vTotTrib><infAdFisco>Teste de emissao integra</infAdFisco></imp><infCTeNorm><infCarga><vCarga>310.00</vCarga><proPred>DIVERSOS</proPred><xOutCat>DIVERSOS</xOutCat><infQ><cUnid>01</cUnid><tpMed>KILOS</tpMed><qCarga>13000.0000</qCarga></infQ><vCargaAverb>310.00</vCargaAverb></infCarga><infDoc><infNF><mod>01</mod><serie>920</serie><nDoc>926</nDoc><dEmi>2021-05-05</dEmi><vBC>0.00</vBC><vICMS>0.00</vICMS><vBCST>0.00</vBCST><vST>0.00</vST><vProd>320.00</vProd><vNF>310.00</vNF><nCFOP>5405</nCFOP><nPeso>13000.000</nPeso></infNF></infDoc><infModal versaoModal=\"3.00\"><rodo xmlns=\"http://www.portalfiscal.inf.br/cte\"><RNTRC>09549369</RNTRC></rodo></infModal></infCTeNorm></infCte><infCTeSupl><qrCodCTe>https://dfe-portal.svrs.rs.gov.br/cte/qrCode?chCTe=43210607364617000135570000000022221000003307&amp;tpAmb=2</qrCodCTe></infCTeSupl><Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\" /><SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\" /><Reference URI=\"#CTe43210607364617000135570000000022221000003307\"><Transforms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\" /><Transform Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\" /></Transforms><DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\" /><DigestValue>h58/SCJ/eCOwLJTP5I2rnRuWUws=</DigestValue></Reference></SignedInfo><SignatureValue>cW2dc5t2V5636xfVJ303YbjCv31g7WwKo4xsMIfH2BFJmtLsauUX4zuT9Atz0aT9ysTrk9ywn+UD+5CQGeI9gFMYuin3uRf8Olzx9Pmj83zkoY9WY0KvdJhJlqcYRpUThmdg5a4a6uq3+jVz2PSXktv/nwmFIiLQF3fbl6bd60K//lujOnkxmGBlIfUPtd0Bg27RL3aQKoK/xBpsC0CdIcC0+NdQE6Z4cUVsQjaete8RmSW3iqrrm7Gxs+mYJuJgpFafpJmHXCgoQnOB4elzG9nr+Jm8TzYOEIXI/tYCjbnlrduxhMoBC+CWOTafzaeOMew0sEi6D933+swEc5Uo5A==</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></CTe><protCTe versao=\"3.00\"><infProt Id=\"CTe143210000364396\"><tpAmb>2</tpAmb><verAplic>RS20210507095513</verAplic><chCTe>43210607364617000135570000000022221000003307</chCTe><dhRecbto>2021-06-21T17:33:34-03:00</dhRecbto><nProt>143210000364396</nProt><digVal>h58/SCJ/eCOwLJTP5I2rnRuWUws=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso do CT-e</xMotivo></infProt></protCTe></cteProc>"}
+21/06/2021 17:33 - [DOWNLOAD_DADOS]
+21/06/2021 17:33 - {"chCTe":"43210607364617000135570000000022221000003307","CNPJ":"07364617000135","tpDown":"XP","tpAmb":"2"}
+21/06/2021 17:33 - [DOWNLOAD_STATUS]
+21/06/2021 17:33 - 200

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.IO;
-using System.Windows.Forms;
 using System.Xml.Serialization;
 using NSFacilita_Transporte.src.Classes.CTe;
 using NSFacilita_Transporte.src.Classes.MDFe;
 using NSFacilita_Transporte.src.Classes.NFeAuth;
 using DDFeAPIClientCSharp;
 using Newtonsoft.Json;
-using System.Collections.Generic;
 
 namespace facilitaTransporte
 {
@@ -25,7 +23,7 @@ namespace facilitaTransporte
             TNfeProc NFeAutorizada = lerXML(xmlNFeAutorizada);
 
             // Terceiro passo: capturar os dados do objeto NFe e atribui-los ao objeto do CTe
-            string respostaEmissaoCTe = gerarCTe(NFeAutorizada);
+            //string respostaEmissaoCTe = gerarCTe(NFeAutorizada);
 
             // Quarto passo: capturar os dados do objeto NFe e atribui-los ao objeto do MDFe e/ou CTe
             string respostarespostaEmissaoMDFe = gerarMDFe(NFeAutorizada);
@@ -62,12 +60,12 @@ namespace facilitaTransporte
             }
         }
 
-        public static string mdfeToXML(object CTe)
+        public static string mdfeToXML(object MDFe)
         {
             using (var stringwriter = new StringWriter())
             {
-                var serializer = new XmlSerializer(CTe.GetType());
-                serializer.Serialize(stringwriter, CTe);
+                var serializer = new XmlSerializer(MDFe.GetType());
+                serializer.Serialize(stringwriter, MDFe);
                 return stringwriter.ToString();
             }
         }
@@ -95,7 +93,7 @@ namespace facilitaTransporte
                 natOp = NFeRecebida.NFe.infNFe.ide.natOp,
                 mod = TModCT.Item57,
                 serie = "0",
-                nCT = "2219",
+                nCT = "2222",
                 dhEmi = DateTime.Now.ToString("s") + "-03:00",
                 tpImp = TCTeInfCteIdeTpImp.Item2,
                 tpEmis = TCTeInfCteIdeTpEmis.Item1,
@@ -330,7 +328,7 @@ namespace facilitaTransporte
                 infModal = new TCTeInfCteInfCTeNormInfModal
                 {
                     versaoModal = "3.00",
-                    rodo = new rodo
+                    rodo = new TCTeRodo
                     {
                         RNTRC = "09549369"
                     }
@@ -339,7 +337,7 @@ namespace facilitaTransporte
 
             string CTeJSON = JsonConvert.SerializeObject(CTe);
             string CTeXML = cteToXML(CTe); // serializar o xml
-            respostaEmissaoCTe = NSSuite.emitirCTeSincrono(CTeXML, "57", "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte", true, false);
+            respostaEmissaoCTe = NSSuite.emitirCTeSincrono(CTeXML, "57", "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte", false, false);
             
             // caso queira informar chCTe no MDFe
             //dynamic respostaEmissaoCTeJSON = JsonConvert.DeserializeObject(respostaEmissaoCTe);
@@ -363,12 +361,12 @@ namespace facilitaTransporte
 
             // array auxiliar
             TMDFeInfMDFeIdeInfMunCarrega[] infMunCarregaArray = new TMDFeInfMDFeIdeInfMunCarrega[1];
-            TMDFeInfMDFeIdeInfMunCarrega infMunCarrega = new TMDFeInfMDFeIdeInfMunCarrega
+            TMDFeInfMDFeIdeInfMunCarrega infMunCarrega0= new TMDFeInfMDFeIdeInfMunCarrega
             {
                 cMunCarrega = NFeRecebida.NFe.infNFe.emit.enderEmit.cMun,
                 xMunCarrega = NFeRecebida.NFe.infNFe.emit.enderEmit.xMun,
             };
-            infMunCarregaArray[1] = infMunCarrega;
+            infMunCarregaArray[0] = infMunCarrega0;
 
             MDFe.infMDFe.ide = new TMDFeInfMDFeIde
             {
@@ -378,7 +376,7 @@ namespace facilitaTransporte
                 tpTransp = TTransp.Item1,
                 mod = TModMD.Item58,
                 serie = "1",
-                nMDF = "2100",
+                nMDF = "11574",
                 cMDF = "",
                 cDV = "",
                 modal = TModalMD.Item1,
@@ -441,25 +439,75 @@ namespace facilitaTransporte
                 xProd = NFeRecebida.NFe.infNFe.det[0].prod.xProd,
                 cEAN = NFeRecebida.NFe.infNFe.det[0].prod.cEAN,
                 NCM = NFeRecebida.NFe.infNFe.det[0].prod.NCM,
-                infLotacao = new TMDFeInfMDFeProdPredInfLotacao
-                {
-                    infLocalCarrega = new TMDFeInfMDFeProdPredInfLotacaoInfLocalCarrega
-                    {
-                        //arrays
-                    },
-                    infLocalDescarrega = new TMDFeInfMDFeProdPredInfLotacaoInfLocalDescarrega
-                    {
-                        //arrays
-                    }
-                }
             };
 
             MDFe.infMDFe.tot = new TMDFeInfMDFeTot
             {
                 //qCTe = MDFeInfCTeArray.Length > 0 ? MDFeInfCTeArray.Length.ToString() : "0",
                 qNFe = MDFeInfNFeArray.Length > 0 ? MDFeInfNFeArray.Length.ToString() : "0",
+                vCarga = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
+                cUnid = TMDFeInfMDFeTotCUnid.Item01,
+                qCarga = "13000.000",
             };
 
+            MDFe.infMDFe.infAdic = new TMDFeInfMDFeInfAdic
+            {
+                infCpl = "TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO",
+            };
+
+            rodoVeicTracaoCondutor[] arrayCondutor = new rodoVeicTracaoCondutor[1];
+            rodoVeicTracaoCondutor Condutor0 = new rodoVeicTracaoCondutor
+            {
+                xNome = "JOAO CARRETEIRO",
+                CPF = "16904541059"
+            };
+
+            arrayCondutor[0] = Condutor0;
+
+            rodoInfANTTInfContratante[] arrayInfContratante = new rodoInfANTTInfContratante[1];
+            rodoInfANTTInfContratante infContratante0 = new rodoInfANTTInfContratante
+            {
+                xNome = "Contratante da Silva",
+                Item = "07364617000135",
+                ItemElementName = NSFacilita_Transporte.src.Classes.MDFe.ItemChoiceType21.CNPJ,
+            };
+
+            arrayInfContratante[0] = infContratante0;
+
+            MDFe.infMDFe.infModal = new TMDFeInfMDFeInfModal
+            {
+                versaoModal = "3.00",
+                rodo = new TMDFeRodo
+                {
+                    infANTT = new rodoInfANTT
+                    {
+                        RNTRC = "12345678",
+                        infContratante = arrayInfContratante
+                    },
+                    veicTracao = new rodoVeicTracao
+                    {
+                        cInt = "1",
+                        placa = "IHF4183",
+                        RENAVAM = "87408206662",
+                        tara = "8500",
+                        capKG = "25000",
+                        prop = new rodoVeicTracaoProp
+                        {
+                            Item = "16904541059",
+                            ItemElementName = NSFacilita_Transporte.src.Classes.MDFe.ItemChoiceType4.CNPJ,
+                            RNTRC = "12345678",
+                            xNome = "JOAOZINHO CARRETEIRO",
+                            IE = "ISENTO",
+                            UF = NSFacilita_Transporte.src.Classes.MDFe.TUf.RS,
+                            tpProp = rodoVeicTracaoPropTpProp.Item0
+                        },
+                        condutor = arrayCondutor,
+                        tpCar = rodoVeicTracaoTpCar.Item00,
+                        tpRod = rodoVeicTracaoTpRod.Item06,
+                        UF = NSFacilita_Transporte.src.Classes.MDFe.TUf.RS,
+                    }
+                }
+            };
 
             string MDFeJSON = JsonConvert.SerializeObject(MDFe);
             string MDFeXML = mdfeToXML(MDFe); //String do mdfe serializado

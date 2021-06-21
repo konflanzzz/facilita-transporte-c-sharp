@@ -1279,7 +1279,7 @@ public class NSSuite
                 string pdf = DownloadRespNFCe.pdf;
                 Genericos.salvarPDF(pdf, caminho, nome);
 
-                if (exibeNaTela) Process.Start(caminho + nome + ".pdf");
+                if (exibeNaTela) Process.Start(caminho + nome + ".pdf"); //apontou um erro aqui. existe outra forma de abrir pdf na tela?
             }
         }
         else

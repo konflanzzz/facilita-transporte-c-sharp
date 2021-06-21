@@ -5607,7 +5607,7 @@ namespace NSFacilita_Transporte.src.Classes.CTe
     public partial class TCTeInfCteInfCTeNormInfModal
     {
 
-        private rodo rodoField;
+        private TCTeRodo rodoField;
 
         private string versaoModalField;
 
@@ -5625,7 +5625,7 @@ namespace NSFacilita_Transporte.src.Classes.CTe
             }
         }
 
-        public rodo rodo
+        public TCTeRodo rodo
         {
             get
             {
@@ -5645,7 +5645,7 @@ namespace NSFacilita_Transporte.src.Classes.CTe
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.portalfiscal.inf.br/cte")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://www.portalfiscal.inf.br/cte", IsNullable = false)]
-    public partial class rodo
+    public partial class TCTeRodo
     {
 
         private string rNTRCField;

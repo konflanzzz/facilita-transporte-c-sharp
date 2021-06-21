@@ -1,0 +1,98 @@
+21/06/2021 18:04 - [EMISSAO_SINCRONA_INICIO]
+21/06/2021 18:04 - [ENVIO_DADOS]
+21/06/2021 18:04 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-21T18:04:41-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-21T18:04:41-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CNPJ>16904541059</CNPJ>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>0</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+21/06/2021 18:04 - [ENVIO_RESPOSTA]
+21/06/2021 18:04 - {"status":-2,"motivo":"MDFe invalido de acordo com a validacao contra schema","erros":["O campo 'IE' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xNome'Este campo deve ser preenchido com letras ou numeros e conter no minimo 2 e no maximo 14 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xNome'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":IE}' is expected.)","infDoc : cvc-complex-type.2.4.a: Invalid content was found starting with element 'prodPred'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infDoc}' is expected.","qCarga : cvc-pattern-valid: Value '13000.000' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'."]}
+21/06/2021 18:04 - [JSON_RETORNO]
+21/06/2021 18:04 - {"chMDFe":"","statusEnvio":"-2","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"MDFe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'IE' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xNome'Este campo deve ser preenchido com letras ou numeros e conter no minimo 2 e no maximo 14 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xNome'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":IE}' is expected.)","infDoc : cvc-complex-type.2.4.a: Invalid content was found starting with element 'prodPred'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infDoc}' is expected.","qCarga : cvc-pattern-valid: Value '13000.000' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'."]}
+21/06/2021 18:04 - [EMISSAO_SINCRONA_FIM]
