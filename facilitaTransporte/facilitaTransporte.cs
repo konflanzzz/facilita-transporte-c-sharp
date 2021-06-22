@@ -22,7 +22,7 @@ namespace facilitaTransporte
             TNfeProc NFeAutorizada = lerXML(xmlNFeAutorizada);
 
             // Terceiro passo: capturar os dados do objeto NFe e atribui-los ao objeto do CTe
-            string respostaEmissaoCTe = ""; //gerarCTe(NFeAutorizada);
+            string respostaEmissaoCTe = gerarCTe(NFeAutorizada);
 
             // Quarto passo: capturar os dados do objeto NFe e atribui-los ao objeto do MDFe
             string respostaEmissaoMDFe = gerarMDFe(NFeAutorizada);
@@ -36,7 +36,7 @@ namespace facilitaTransporte
         public static string procurarDocumentos()
         {
             string xmlNFe = "";
-            string retorno = DDFeAPI.downloadUnico("07364617000135", "C:/documentosFacilitaTransporte/DDFe", "2", "", "55", "43210500063354950072559200000009261173401688", false, false, false);
+            string retorno = DDFeAPI.downloadUnico("07364617000135", "C:/documentosFacilitaTransporte/DDFe", "2", "", "55", "43210600063354950072559200000009331968904734", false,true,false);
             dynamic respostaJson = JsonConvert.DeserializeObject(retorno);
             xmlNFe = respostaJson.xml;
             return xmlNFe;
@@ -95,7 +95,7 @@ namespace facilitaTransporte
                 natOp = NFeRecebida.NFe.infNFe.ide.natOp,
                 mod = TModCT.Item57,
                 serie = "0",
-                nCT = "2222",
+                nCT = "2226",
                 dhEmi = DateTime.Now.ToString("s") + "-03:00",
                 tpImp = TCTeInfCteIdeTpImp.Item2,
                 tpEmis = TCTeInfCteIdeTpEmis.Item1,
@@ -358,7 +358,7 @@ namespace facilitaTransporte
                 tpTransp = TTransp.TAC,
                 mod = TModMD.Item58,
                 serie = "1",
-                nMDF = "11574",
+                nMDF = "11663",
                 cMDF = "", //passar vazio ou null?
                 cDV = "", //passar vazio ou null?
                 modal = TModalMD.Item1,
@@ -498,7 +498,7 @@ namespace facilitaTransporte
                     veicTracao = new rodoVeicTracao
                     {
                         cInt = "1",
-                        placa = "IHF4183",
+                        placa = "TFY6586",
                         RENAVAM = "87408206662",
                         tara = "8500",
                         capKG = "25000",
