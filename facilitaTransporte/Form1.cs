@@ -18,7 +18,7 @@ namespace facilitaTransporte
         private void emitirDocumento_Click(object sender, EventArgs e)
         {
             // chamar funcao que gerar documentos
-            String retornoEmissao = facilitaTransporte.emitirDocumentos();
+            Array retornoEmissao = facilitaTransporte.emitirDocumentos();
         }
 
         private void lerArquivoXML_Click(object sender, EventArgs e)

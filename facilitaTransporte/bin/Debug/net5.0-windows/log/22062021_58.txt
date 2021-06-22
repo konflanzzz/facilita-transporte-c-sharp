@@ -1,0 +1,1188 @@
+22/06/2021 10:23 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 10:23 - [ENVIO_DADOS]
+22/06/2021 10:23 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T10:23:13-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T10:23:13-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CNPJ>16904541059</CNPJ>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>0</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 10:23 - [ENVIO_RESPOSTA]
+22/06/2021 10:23 - {"status":-2,"motivo":"MDFe invalido de acordo com a validacao contra schema","erros":["O campo 'IE' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xNome'Este campo deve ser preenchido com letras ou numeros e conter no minimo 2 e no maximo 14 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xNome'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":IE}' is expected.)","infDoc : cvc-complex-type.2.4.a: Invalid content was found starting with element 'prodPred'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infDoc}' is expected.","qCarga : cvc-pattern-valid: Value '13000.000' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'."]}
+22/06/2021 10:23 - [JSON_RETORNO]
+22/06/2021 10:23 - {"chMDFe":"","statusEnvio":"-2","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"MDFe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'IE' e de preenchimento obrigatorio e nao foi preenchido. Este campo deve ser informado antes do campo 'xNome'Este campo deve ser preenchido com letras ou numeros e conter no minimo 2 e no maximo 14 caracteres. (cvc-complex-type.2.4.a: Invalid content was found starting with element 'xNome'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":IE}' is expected.)","infDoc : cvc-complex-type.2.4.a: Invalid content was found starting with element 'prodPred'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infDoc}' is expected.","qCarga : cvc-pattern-valid: Value '13000.000' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'."]}
+22/06/2021 10:23 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 10:27 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 10:27 - [ENVIO_DADOS]
+22/06/2021 10:27 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T10:27:33-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T10:27:33-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CNPJ>16904541059</CNPJ>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>0</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.00</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 10:27 - [ENVIO_RESPOSTA]
+22/06/2021 10:27 - {"status":-2,"motivo":"MDFe invalido de acordo com a validacao contra schema","erros":["infDoc : cvc-complex-type.2.4.a: Invalid content was found starting with element 'prodPred'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infDoc}' is expected.","qCarga : cvc-pattern-valid: Value '13000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'."]}
+22/06/2021 10:27 - [JSON_RETORNO]
+22/06/2021 10:27 - {"chMDFe":"","statusEnvio":"-2","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"MDFe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["infDoc : cvc-complex-type.2.4.a: Invalid content was found starting with element 'prodPred'. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infDoc}' is expected.","qCarga : cvc-pattern-valid: Value '13000.00' is not facet-valid with respect to pattern '0|0\\.[0-9]{4}|[1-9]{1}[0-9]{0,10}(\\.[0-9]{4})?' for type 'TDec_1104'."]}
+22/06/2021 10:27 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 10:34 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 10:34 - [ENVIO_DADOS]
+22/06/2021 10:34 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T10:33:40-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T10:33:40-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CNPJ>16904541059</CNPJ>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>0</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc />
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 10:34 - [ENVIO_RESPOSTA]
+22/06/2021 10:34 - {"status":-2,"motivo":"MDFe invalido de acordo com a validacao contra schema","erros":["infMunDescarga : cvc-complex-type.2.4.b: The content of element 'infDoc' is not complete. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infMunDescarga}' is expected."]}
+22/06/2021 10:34 - [JSON_RETORNO]
+22/06/2021 10:34 - {"chMDFe":"","statusEnvio":"-2","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"MDFe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["infMunDescarga : cvc-complex-type.2.4.b: The content of element 'infDoc' is not complete. One of '{\"http://www.portalfiscal.inf.br/mdfe\":infMunDescarga}' is expected."]}
+22/06/2021 10:34 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 10:39 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 10:39 - [ENVIO_DADOS]
+22/06/2021 10:39 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T10:38:43-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T10:38:43-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CNPJ>16904541059</CNPJ>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>0</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 10:39 - [ENVIO_RESPOSTA]
+22/06/2021 10:39 - {"status":-2,"motivo":"Modal do MDFe invalido de acordo com a validacao contra schema","erros":["O campo 'CNPJ' foi preenchido incorretamente com o valor '16904541059'. Este campo deve ser preenchido com um CNPJ de 14 digitos. Este campo e obrigatorio. (cvc-pattern-valid: Value '16904541059' is not facet-valid with respect to pattern '[0-9]{0}|[0-9]{14}' for type 'TCnpjOpc'.)"]}
+22/06/2021 10:39 - [JSON_RETORNO]
+22/06/2021 10:39 - {"chMDFe":"","statusEnvio":"-2","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"Modal do MDFe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["O campo 'CNPJ' foi preenchido incorretamente com o valor '16904541059'. Este campo deve ser preenchido com um CNPJ de 14 digitos. Este campo e obrigatorio. (cvc-pattern-valid: Value '16904541059' is not facet-valid with respect to pattern '[0-9]{0}|[0-9]{14}' for type 'TCnpjOpc'.)"]}
+22/06/2021 10:39 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 10:42 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 10:42 - [ENVIO_DADOS]
+22/06/2021 10:42 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T10:42:43-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T10:42:43-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CPF>16904541059</CPF>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>0</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 10:42 - [ENVIO_RESPOSTA]
+22/06/2021 10:42 - {"status":200,"motivo":"MDF-e enviado para Sefaz","nsNRec":"293962"}
+22/06/2021 10:42 - [CONSULTA_DADOS]
+22/06/2021 10:42 - {"CNPJ":"07364617000135","nsNRec":"293962","tpAmb":"2"}
+22/06/2021 10:42 - [CONSULTA_RESPOSTA]
+22/06/2021 10:42 - {"status":200,"motivo":"Consulta realizada com sucesso","chMDFe":"43210607364617000135580010000115741850569327","cStat":"743","xMotivo":"Rejeição: O tipo de transportador deve ser TAC quando informado CPF do proprietário do veículo de tração","dhRecbto":"null"}
+22/06/2021 10:42 - [JSON_RETORNO]
+22/06/2021 10:42 - {"chMDFe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"743","nProt":"","motivo":"Rejeição: O tipo de transportador deve ser TAC quando informado CPF do proprietário do veículo de tração","nsNRec":"293962","erros":null}
+22/06/2021 10:42 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 10:45 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 10:45 - [ENVIO_DADOS]
+22/06/2021 10:45 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T10:45:07-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T10:45:07-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CPF>16904541059</CPF>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>0</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 10:45 - [ENVIO_RESPOSTA]
+22/06/2021 10:45 - {"status":200,"motivo":"MDF-e enviado para Sefaz","nsNRec":"293964"}
+22/06/2021 10:45 - [CONSULTA_DADOS]
+22/06/2021 10:45 - {"CNPJ":"07364617000135","nsNRec":"293964","tpAmb":"2"}
+22/06/2021 10:45 - [CONSULTA_RESPOSTA]
+22/06/2021 10:45 - {"status":200,"motivo":"Consulta realizada com sucesso","chMDFe":"43210607364617000135580010000115741101322230","cStat":"743","xMotivo":"Rejeição: O tipo de transportador deve ser TAC quando informado CPF do proprietário do veículo de tração","dhRecbto":"null"}
+22/06/2021 10:45 - [JSON_RETORNO]
+22/06/2021 10:45 - {"chMDFe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"743","nProt":"","motivo":"Rejeição: O tipo de transportador deve ser TAC quando informado CPF do proprietário do veículo de tração","nsNRec":"293964","erros":null}
+22/06/2021 10:45 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 10:52 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 10:52 - [ENVIO_DADOS]
+22/06/2021 10:52 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T10:52:27-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T10:52:27-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CPF>16904541059</CPF>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>2</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 10:52 - [ENVIO_RESPOSTA]
+22/06/2021 10:52 - {"status":200,"motivo":"MDF-e enviado para Sefaz","nsNRec":"293969"}
+22/06/2021 10:52 - [CONSULTA_DADOS]
+22/06/2021 10:52 - {"CNPJ":"07364617000135","nsNRec":"293969","tpAmb":"2"}
+22/06/2021 10:52 - [CONSULTA_RESPOSTA]
+22/06/2021 10:52 - {"status":200,"motivo":"Consulta realizada com sucesso","chMDFe":"43210607364617000135580010000115741955071116","cStat":"743","xMotivo":"Rejeição: O tipo de transportador deve ser TAC quando informado CPF do proprietário do veículo de tração","dhRecbto":"null"}
+22/06/2021 10:52 - [JSON_RETORNO]
+22/06/2021 10:52 - {"chMDFe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"743","nProt":"","motivo":"Rejeição: O tipo de transportador deve ser TAC quando informado CPF do proprietário do veículo de tração","nsNRec":"293969","erros":null}
+22/06/2021 10:52 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 11:02 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 11:02 - [ENVIO_DADOS]
+22/06/2021 11:02 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <tpTransp>2</tpTransp>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T11:01:48-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T11:01:48-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CPF>16904541059</CPF>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>2</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 11:02 - [ENVIO_RESPOSTA]
+22/06/2021 11:02 - {"status":200,"motivo":"MDF-e enviado para Sefaz","nsNRec":"293977"}
+22/06/2021 11:02 - [CONSULTA_DADOS]
+22/06/2021 11:02 - {"CNPJ":"07364617000135","nsNRec":"293977","tpAmb":"2"}
+22/06/2021 11:02 - [CONSULTA_RESPOSTA]
+22/06/2021 11:02 - {"status":200,"motivo":"Consulta realizada com sucesso","chMDFe":"43210607364617000135580010000115741473747038","cStat":"616","xMotivo":"Rejeição: Nenhum grupo de documentos foi informado (CT-e, CT, NF-e, NF, MDF-e) [Municipio sem documento: CRISTAL]","dhRecbto":"null"}
+22/06/2021 11:02 - [JSON_RETORNO]
+22/06/2021 11:02 - {"chMDFe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"616","nProt":"","motivo":"Rejeição: Nenhum grupo de documentos foi informado (CT-e, CT, NF-e, NF, MDF-e) [Municipio sem documento: CRISTAL]","nsNRec":"293977","erros":null}
+22/06/2021 11:02 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 11:06 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 11:06 - [ENVIO_DADOS]
+22/06/2021 11:06 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <tpTransp>2</tpTransp>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T11:04:17-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T11:04:17-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CPF>16904541059</CPF>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>2</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+        <infNFe>
+          <chNFe>NFe43210500063354950072559200000009261173401688</chNFe>
+        </infNFe>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 11:06 - [ENVIO_RESPOSTA]
+22/06/2021 11:06 - {"status":-2,"motivo":"MDFe invalido de acordo com a validacao contra schema","erros":["chNFe : cvc-pattern-valid: Value 'NFe43210500063354950072559200000009261173401688' is not facet-valid with respect to pattern '[0-9]{44}' for type 'TChNFe'."]}
+22/06/2021 11:06 - [JSON_RETORNO]
+22/06/2021 11:06 - {"chMDFe":"","statusEnvio":"-2","statusConsulta":"","statusDownload":"","cStat":"","nProt":"","motivo":"MDFe invalido de acordo com a validacao contra schema","nsNRec":"","erros":["chNFe : cvc-pattern-valid: Value 'NFe43210500063354950072559200000009261173401688' is not facet-valid with respect to pattern '[0-9]{44}' for type 'TChNFe'."]}
+22/06/2021 11:06 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 11:49 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 11:49 - [ENVIO_DADOS]
+22/06/2021 11:49 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <tpTransp>2</tpTransp>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T11:47:10-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T11:47:10-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CPF>16904541059</CPF>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>2</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+        <infNFe>
+          <chNFe>43210500063354950072559200000009261173401688</chNFe>
+        </infNFe>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 11:49 - [ENVIO_RESPOSTA]
+22/06/2021 11:49 - {"status":200,"motivo":"MDF-e enviado para Sefaz","nsNRec":"293999"}
+22/06/2021 11:49 - [CONSULTA_DADOS]
+22/06/2021 11:49 - {"CNPJ":"07364617000135","nsNRec":"293999","tpAmb":"2"}
+22/06/2021 11:49 - [CONSULTA_RESPOSTA]
+22/06/2021 11:49 - {"status":200,"motivo":"Consulta realizada com sucesso","chMDFe":"43210607364617000135580010000115741074214290","cStat":"726","xMotivo":"Rejeição: O grupo de informações da carga lotação deve ser informado ","dhRecbto":"null"}
+22/06/2021 11:49 - [JSON_RETORNO]
+22/06/2021 11:49 - {"chMDFe":"","statusEnvio":"200","statusConsulta":"200","statusDownload":"","cStat":"726","nProt":"","motivo":"Rejeição: O grupo de informações da carga lotação deve ser informado ","nsNRec":"293999","erros":null}
+22/06/2021 11:49 - [EMISSAO_SINCRONA_FIM]
+22/06/2021 16:59 - [EMISSAO_SINCRONA_INICIO]
+22/06/2021 16:59 - [ENVIO_DADOS]
+22/06/2021 16:59 - <?xml version="1.0" encoding="utf-16"?>
+<MDFe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.portalfiscal.inf.br/mdfe">
+  <infMDFe versao="3.00" Id="MDFe">
+    <ide>
+      <cUF>43</cUF>
+      <tpAmb>2</tpAmb>
+      <tpEmit>2</tpEmit>
+      <tpTransp>2</tpTransp>
+      <mod>58</mod>
+      <serie>1</serie>
+      <nMDF>11574</nMDF>
+      <cMDF />
+      <cDV />
+      <modal>1</modal>
+      <dhEmi>2021-06-22T16:59:55-03:00</dhEmi>
+      <tpEmis>1</tpEmis>
+      <procEmi>0</procEmi>
+      <verProc>5.7</verProc>
+      <UFIni>RS</UFIni>
+      <UFFim>RS</UFFim>
+      <infMunCarrega>
+        <cMunCarrega>4306056</cMunCarrega>
+        <xMunCarrega>CRISTAL</xMunCarrega>
+      </infMunCarrega>
+      <dhIniViagem>2021-06-22T16:59:55-03:00</dhIniViagem>
+    </ide>
+    <emit>
+      <CNPJ>07364617000135</CNPJ>
+      <IE>0170108708</IE>
+      <xNome>EMISSAO TESTE MDFE</xNome>
+      <xFant>NS TECNOLOGIA</xFant>
+      <enderEmit>
+        <xLgr>AV ANTONIO DURO</xLgr>
+        <nro>777</nro>
+        <xCpl>SALA 01</xCpl>
+        <xBairro>OLARIA</xBairro>
+        <cMun>4303509</cMun>
+        <xMun>CAMAQUA</xMun>
+        <CEP>87265000</CEP>
+        <UF>RS</UF>
+        <fone>513692112</fone>
+        <email>fernando.konflanz@nstecnologia.com.br</email>
+      </enderEmit>
+    </emit>
+    <infModal versaoModal="3.00">
+      <rodo>
+        <infANTT>
+          <RNTRC>12345678</RNTRC>
+          <infContratante>
+            <xNome>Contratante da Silva</xNome>
+            <CNPJ>07364617000135</CNPJ>
+          </infContratante>
+        </infANTT>
+        <veicTracao>
+          <cInt>1</cInt>
+          <placa>IHF4183</placa>
+          <RENAVAM>87408206662</RENAVAM>
+          <tara>8500</tara>
+          <capKG>25000</capKG>
+          <prop>
+            <CPF>16904541059</CPF>
+            <RNTRC>12345678</RNTRC>
+            <xNome>JOAOZINHO CARRETEIRO</xNome>
+            <IE>ISENTO</IE>
+            <UF>RS</UF>
+            <tpProp>2</tpProp>
+          </prop>
+          <condutor>
+            <xNome>JOAO CARRETEIRO</xNome>
+            <CPF>16904541059</CPF>
+          </condutor>
+          <tpRod>06</tpRod>
+          <tpCar>00</tpCar>
+        </veicTracao>
+      </rodo>
+    </infModal>
+    <infDoc>
+      <infMunDescarga>
+        <cMunDescarga>4306056</cMunDescarga>
+        <xMunDescarga>CRISTAL</xMunDescarga>
+        <infNFe>
+          <chNFe>43210500063354950072559200000009261173401688</chNFe>
+        </infNFe>
+      </infMunDescarga>
+    </infDoc>
+    <prodPred>
+      <tpCarga>05</tpCarga>
+      <xProd>PB VW</xProd>
+      <cEAN>SEM GTIN</cEAN>
+      <NCM>87082999</NCM>
+      <infLotacao>
+        <infLocalCarrega>
+          <latitude>-31.776000</latitude>
+          <longitude>-52.359400</longitude>
+        </infLocalCarrega>
+        <infLocalDescarrega>
+          <latitude>-31.776000</latitude>
+          <longitude>-52.359400</longitude>
+        </infLocalDescarrega>
+      </infLotacao>
+    </prodPred>
+    <tot>
+      <qNFe>1</qNFe>
+      <vCarga>310.00</vCarga>
+      <cUnid>01</cUnid>
+      <qCarga>13000.0000</qCarga>
+    </tot>
+    <infAdic>
+      <infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl>
+    </infAdic>
+  </infMDFe>
+</MDFe>
+22/06/2021 16:59 - [ENVIO_RESPOSTA]
+22/06/2021 16:59 - {"status":200,"motivo":"MDF-e enviado para Sefaz","nsNRec":"294166"}
+22/06/2021 16:59 - [CONSULTA_DADOS]
+22/06/2021 16:59 - {"CNPJ":"07364617000135","nsNRec":"294166","tpAmb":"2"}
+22/06/2021 16:59 - [CONSULTA_RESPOSTA]
+22/06/2021 16:59 - {"status":200,"motivo":"Consulta realizada com sucesso","chMDFe":"43210607364617000135580010000115741720658419","cStat":"100","xMotivo":"Autorizado o uso do MDF-e","nProt":"943210000029691","dhRecbto":"2021-06-22T17:00:27-03:00","xml":"<?xml version=\"1.0\" encoding=\"utf-8\"?><mdfeProc versao=\"3.00\" xmlns=\"http://www.portalfiscal.inf.br/mdfe\"><MDFe><infMDFe versao=\"3.00\" Id=\"MDFe43210607364617000135580010000115741720658419\"><ide><cUF>43</cUF><tpAmb>2</tpAmb><tpEmit>2</tpEmit><tpTransp>2</tpTransp><mod>58</mod><serie>1</serie><nMDF>11574</nMDF><cMDF>72065841</cMDF><cDV>9</cDV><modal>1</modal><dhEmi>2021-06-22T16:59:55-03:00</dhEmi><tpEmis>1</tpEmis><procEmi>0</procEmi><verProc>5.7|NS_API</verProc><UFIni>RS</UFIni><UFFim>RS</UFFim><infMunCarrega><cMunCarrega>4306056</cMunCarrega><xMunCarrega>CRISTAL</xMunCarrega></infMunCarrega><dhIniViagem>2021-06-22T16:59:55-03:00</dhIniViagem></ide><emit><CNPJ>07364617000135</CNPJ><IE>0170108708</IE><xNome>EMISSAO TESTE MDFE</xNome><xFant>NS TECNOLOGIA</xFant><enderEmit><xLgr>AV ANTONIO DURO</xLgr><nro>777</nro><xCpl>SALA 01</xCpl><xBairro>OLARIA</xBairro><cMun>4303509</cMun><xMun>CAMAQUA</xMun><CEP>87265000</CEP><UF>RS</UF><fone>513692112</fone><email>fernando.konflanz@nstecnologia.com.br</email></enderEmit></emit><infModal versaoModal=\"3.00\"><rodo xmlns=\"http://www.portalfiscal.inf.br/mdfe\"><infANTT><RNTRC>12345678</RNTRC><infContratante><xNome>Contratante da Silva</xNome><CNPJ>07364617000135</CNPJ></infContratante></infANTT><veicTracao><cInt>1</cInt><placa>IHF4183</placa><RENAVAM>87408206662</RENAVAM><tara>8500</tara><capKG>25000</capKG><prop><CPF>16904541059</CPF><RNTRC>12345678</RNTRC><xNome>JOAOZINHO CARRETEIRO</xNome><IE>ISENTO</IE><UF>RS</UF><tpProp>2</tpProp></prop><condutor><xNome>JOAO CARRETEIRO</xNome><CPF>16904541059</CPF></condutor><tpRod>06</tpRod><tpCar>00</tpCar></veicTracao></rodo></infModal><infDoc><infMunDescarga><cMunDescarga>4306056</cMunDescarga><xMunDescarga>CRISTAL</xMunDescarga><infNFe><chNFe>43210500063354950072559200000009261173401688</chNFe></infNFe></infMunDescarga></infDoc><prodPred><tpCarga>05</tpCarga><xProd>PB VW</xProd><cEAN>SEM GTIN</cEAN><NCM>87082999</NCM><infLotacao><infLocalCarrega><latitude>-31.776000</latitude><longitude>-52.359400</longitude></infLocalCarrega><infLocalDescarrega><latitude>-31.776000</latitude><longitude>-52.359400</longitude></infLocalDescarrega></infLotacao></prodPred><tot><qNFe>1</qNFe><vCarga>310.00</vCarga><cUnid>01</cUnid><qCarga>13000.0000</qCarga></tot><infAdic><infCpl>TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO</infCpl></infAdic></infMDFe><infMDFeSupl><qrCodMDFe>https://dfe-portal.svrs.rs.gov.br/mdfe/qrCode?chMDFe=43210607364617000135580010000115741720658419&amp;tpAmb=2</qrCodMDFe></infMDFeSupl><Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\"><SignedInfo><CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\" /><SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\" /><Reference URI=\"#MDFe43210607364617000135580010000115741720658419\"><Transforms><Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\" /><Transform Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\" /></Transforms><DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\" /><DigestValue>Oeee08Pgk3jPo//vDF0d6VhaMlI=</DigestValue></Reference></SignedInfo><SignatureValue>Id325KA5vjgSe//x8qYQ0J66iz/c45hOZ4KijmVJli/9JwmAsqSkJ+LgF3YFYm4COVbOS/iSOFPhxn5UNsw2WomJKYW2d9m3dNuIP6GJRt2DFgkuiPxFKEQk6/dTfb2/tGjk30nLyYbh/4OqUP0YEUF0jmapnzg0vuh/UqP8gUxN7nygpAskl3M/GEK/r52qGxD4l/I9GIKqo2rgtYLpJ85us7LdVPNMZ7fJVALsL4xN4b+6/anhOGaAv2PamD9QOsOy2Rh7irzvc0GVfiqOk2cDmoSB4tK7YQz4zb2AmJtEbHAORkJTS6EaQ0Ha768nrc+zrSEw+vRW/KmYsdBqow==</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></MDFe><protMDFe versao=\"3.00\"><infProt Id=\"MDFe943210000029691\"><tpAmb>2</tpAmb><verAplic>RS20210604120718</verAplic><chMDFe>43210607364617000135580010000115741720658419</chMDFe><dhRecbto>2021-06-22T17:00:27-03:00</dhRecbto><nProt>943210000029691</nProt><digVal>Oeee08Pgk3jPo//vDF0d6VhaMlI=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso do MDF-e</xMotivo></infProt></protMDFe></mdfeProc>"}
+22/06/2021 16:59 - [DOWNLOAD_DADOS]
+22/06/2021 16:59 - {"chMDFe":"43210607364617000135580010000115741720658419","tpDown":"XP","tpAmb":"2"}
+22/06/2021 16:59 - [DOWNLOAD_STATUS]
+22/06/2021 16:59 - 200
+22/06/2021 16:59 - [JSON_RETORNO]
+22/06/2021 16:59 - {"chMDFe":"43210607364617000135580010000115741720658419","statusEnvio":"200","statusConsulta":"200","statusDownload":"200","cStat":"100","nProt":"943210000029691","motivo":"Autorizado o uso do MDF-e","nsNRec":"294166","erros":null}
+22/06/2021 16:59 - [EMISSAO_SINCRONA_FIM]

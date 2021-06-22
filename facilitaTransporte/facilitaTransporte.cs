@@ -11,10 +11,9 @@ namespace facilitaTransporte
 {
     class facilitaTransporte
     {
-
-        public static string emitirDocumentos()
+        public static string[] emitirDocumentos()
         {
-            string resposta = "";
+
 
             // Primeiro passo: obter o xml do documento
             string xmlNFeAutorizada = procurarDocumentos();
@@ -23,10 +22,12 @@ namespace facilitaTransporte
             TNfeProc NFeAutorizada = lerXML(xmlNFeAutorizada);
 
             // Terceiro passo: capturar os dados do objeto NFe e atribui-los ao objeto do CTe
-            //string respostaEmissaoCTe = gerarCTe(NFeAutorizada);
+            string respostaEmissaoCTe = ""; //gerarCTe(NFeAutorizada);
 
-            // Quarto passo: capturar os dados do objeto NFe e atribui-los ao objeto do MDFe e/ou CTe
-            string respostarespostaEmissaoMDFe = gerarMDFe(NFeAutorizada);
+            // Quarto passo: capturar os dados do objeto NFe e atribui-los ao objeto do MDFe
+            string respostaEmissaoMDFe = gerarMDFe(NFeAutorizada);
+            
+            string[] resposta = new string[] { respostaEmissaoCTe, respostaEmissaoMDFe};
 
             return resposta;
         }
@@ -35,7 +36,7 @@ namespace facilitaTransporte
         public static string procurarDocumentos()
         {
             string xmlNFe = "";
-            string retorno = DDFeAPI.downloadUnico("07364617000135", "C:/ testeDownloadDDFe", "2", "", "55", "43210500063354950072559200000009261173401688", false, false, false);
+            string retorno = DDFeAPI.downloadUnico("07364617000135", "C:/documentosFacilitaTransporte/DDFe", "2", "", "55", "43210500063354950072559200000009261173401688", false, false, false);
             dynamic respostaJson = JsonConvert.DeserializeObject(retorno);
             xmlNFe = respostaJson.xml;
             return xmlNFe;
@@ -44,6 +45,7 @@ namespace facilitaTransporte
         // faz a leitura de uma string de xml e retorna um objeto da NFe 
         public static TNfeProc lerXML(string xmlNFe)
         {
+            // Colocar aqui um try/catch?
             StringReader stringReader = new StringReader(xmlNFe);
             XmlSerializer desserializador = new XmlSerializer(typeof(TNfeProc));
             TNfeProc NFeProc = (TNfeProc)desserializador.Deserialize(stringReader);
@@ -273,42 +275,6 @@ namespace facilitaTransporte
                 }
             };
 
-            // Cria um array auxiliar para inserir no array
-            TCTeInfCteInfCTeNormInfCargaInfQ[] infQArray = new TCTeInfCteInfCTeNormInfCargaInfQ[1];
-
-            // cria um objeto auxiliar para inserir no array
-            TCTeInfCteInfCTeNormInfCargaInfQ infQ0 = new TCTeInfCteInfCTeNormInfCargaInfQ
-            {
-                cUnid = TCTeInfCteInfCTeNormInfCargaInfQCUnid.Item01,
-                tpMed = "KILOS",
-                qCarga = "13000.0000"
-            };
-
-            // Array para o grupo infQ
-            infQArray[0] = infQ0;
-
-            // Cria um array auxiliar para inserir no array
-            TCTeInfCteInfCTeNormInfDocInfNF[] infNFArray = new TCTeInfCteInfCTeNormInfDocInfNF[1];
-
-            // cria um objeto auxiliar para inserir no array
-            TCTeInfCteInfCTeNormInfDocInfNF infNF0 = new TCTeInfCteInfCTeNormInfDocInfNF
-            {
-                mod = (TModNF)NFeRecebida.NFe.infNFe.ide.mod,
-                serie = NFeRecebida.NFe.infNFe.ide.serie,
-                nDoc = NFeRecebida.NFe.infNFe.ide.nNF,
-                dEmi = NFeRecebida.NFe.infNFe.ide.dhEmi.Remove(10), // precisa fazer um trim para remover a hora
-                vBC = NFeRecebida.NFe.infNFe.total.ICMSTot.vBC,
-                vICMS = NFeRecebida.NFe.infNFe.total.ICMSTot.vICMS,
-                vBCST = NFeRecebida.NFe.infNFe.total.ICMSTot.vBCST,
-                vST = NFeRecebida.NFe.infNFe.total.ICMSTot.vST,
-                vProd = NFeRecebida.NFe.infNFe.total.ICMSTot.vProd,
-                vNF = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
-                nCFOP = NFeRecebida.NFe.infNFe.det[0].prod.CFOP,
-                nPeso = "13000.000"
-            };
-
-            infNFArray[0] = infNF0;
-
             CTe.infCte.Item = new TCTeInfCteInfCTeNorm
             {
                 infCarga = new TCTeInfCteInfCTeNormInfCarga
@@ -317,12 +283,37 @@ namespace facilitaTransporte
                     proPred = "DIVERSOS",
                     xOutCat = "DIVERSOS",
                     vCarga = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
-                    infQ = infQArray
+                    infQ = new TCTeInfCteInfCTeNormInfCargaInfQ[1]
+                    {
+                        new TCTeInfCteInfCTeNormInfCargaInfQ
+                        {                
+                            cUnid = TCTeInfCteInfCTeNormInfCargaInfQCUnid.Item01,
+                            tpMed = "KILOS",
+                            qCarga = "13000.0000"
+                        }
+                    },
                 },
 
                 infDoc = new TCTeInfCteInfCTeNormInfDoc
                 {
-                    Items = infNFArray
+                    Items = new TCTeInfCteInfCTeNormInfDocInfNF[1]
+                    {
+                        new TCTeInfCteInfCTeNormInfDocInfNF
+                        {
+                            mod = (TModNF)NFeRecebida.NFe.infNFe.ide.mod,
+                            serie = NFeRecebida.NFe.infNFe.ide.serie,
+                            nDoc = NFeRecebida.NFe.infNFe.ide.nNF,
+                            dEmi = NFeRecebida.NFe.infNFe.ide.dhEmi.Remove(10), // precisa fazer um trim para remover a hora
+                            vBC = NFeRecebida.NFe.infNFe.total.ICMSTot.vBC,
+                            vICMS = NFeRecebida.NFe.infNFe.total.ICMSTot.vICMS,
+                            vBCST = NFeRecebida.NFe.infNFe.total.ICMSTot.vBCST,
+                            vST = NFeRecebida.NFe.infNFe.total.ICMSTot.vST,
+                            vProd = NFeRecebida.NFe.infNFe.total.ICMSTot.vProd,
+                            vNF = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
+                            nCFOP = NFeRecebida.NFe.infNFe.det[0].prod.CFOP,
+                            nPeso = "13000.000"
+                        }
+                    }
                 },
 
                 infModal = new TCTeInfCteInfCTeNormInfModal
@@ -335,9 +326,8 @@ namespace facilitaTransporte
                 }
             };
 
-            string CTeJSON = JsonConvert.SerializeObject(CTe);
             string CTeXML = cteToXML(CTe); // serializar o xml
-            respostaEmissaoCTe = NSSuite.emitirCTeSincrono(CTeXML, "57", "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte", false, false);
+            respostaEmissaoCTe = NSSuite.emitirCTeSincrono(CTeXML, "57", "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte/CTe", false, false);
             
             // caso queira informar chCTe no MDFe
             //dynamic respostaEmissaoCTeJSON = JsonConvert.DeserializeObject(respostaEmissaoCTe);
@@ -352,33 +342,25 @@ namespace facilitaTransporte
             string respostaEmissaoMDFe = "";
 
             TMDFe MDFe = new TMDFe();
-            
+
             MDFe.infMDFe = new TMDFeInfMDFe
             {
                 versao = "3.00",
                 Id = "MDFe",
             };
 
-            // array auxiliar
-            TMDFeInfMDFeIdeInfMunCarrega[] infMunCarregaArray = new TMDFeInfMDFeIdeInfMunCarrega[1];
-            TMDFeInfMDFeIdeInfMunCarrega infMunCarrega0= new TMDFeInfMDFeIdeInfMunCarrega
-            {
-                cMunCarrega = NFeRecebida.NFe.infNFe.emit.enderEmit.cMun,
-                xMunCarrega = NFeRecebida.NFe.infNFe.emit.enderEmit.xMun,
-            };
-            infMunCarregaArray[0] = infMunCarrega0;
-
             MDFe.infMDFe.ide = new TMDFeInfMDFeIde
             {
                 cUF = NSFacilita_Transporte.src.Classes.MDFe.TCodUfIBGE.Item43,
                 tpAmb = NSFacilita_Transporte.src.Classes.MDFe.TAmb.Homologacao,
                 tpEmit = TEmit.Item2,
-                tpTransp = TTransp.Item1,
+                tpTranspSpecified = true,
+                tpTransp = TTransp.TAC,
                 mod = TModMD.Item58,
                 serie = "1",
                 nMDF = "11574",
-                cMDF = "",
-                cDV = "",
+                cMDF = "", //passar vazio ou null?
+                cDV = "", //passar vazio ou null?
                 modal = TModalMD.Item1,
                 dhEmi = DateTime.Now.ToString("s") + "-03:00",
                 tpEmis = TMDFeInfMDFeIdeTpEmis.Item1,
@@ -386,16 +368,24 @@ namespace facilitaTransporte
                 verProc = "5.7",
                 UFIni = (NSFacilita_Transporte.src.Classes.MDFe.TUf)NFeRecebida.NFe.infNFe.emit.enderEmit.UF,
                 UFFim = (NSFacilita_Transporte.src.Classes.MDFe.TUf)NFeRecebida.NFe.infNFe.dest.enderDest.UF,
-                infMunCarrega = infMunCarregaArray,
+                infMunCarrega = new TMDFeInfMDFeIdeInfMunCarrega[1] 
+                { 
+                    new TMDFeInfMDFeIdeInfMunCarrega
+                    {
+                        cMunCarrega = NFeRecebida.NFe.infNFe.emit.enderEmit.cMun,
+                        xMunCarrega = NFeRecebida.NFe.infNFe.emit.enderEmit.xMun
+                    }
+                },
                 dhIniViagem = DateTime.Now.ToString("s") + "-03:00",
             };
 
-            MDFe.infMDFe.emit = new TMDFeInfMDFeEmit 
-            { 
+            MDFe.infMDFe.emit = new TMDFeInfMDFeEmit
+            {
                 ItemElementName = NSFacilita_Transporte.src.Classes.MDFe.ItemChoiceType.CNPJ,
                 Item = "07364617000135",
                 xNome = "EMISSAO TESTE MDFE",
                 xFant = "NS TECNOLOGIA",
+                IE = "0170108708",
                 enderEmit = new NSFacilita_Transporte.src.Classes.MDFe.TEndeEmi
                 {
                     xLgr = "AV ANTONIO DURO",
@@ -411,26 +401,36 @@ namespace facilitaTransporte
                 }
             };
 
-            TMDFeInfMDFeInfMunDescargaInfNFe[] MDFeInfNFeArray = new TMDFeInfMDFeInfMunDescargaInfNFe[1];
-            TMDFeInfMDFeInfMunDescargaInfNFe MDFeInfNFe = new TMDFeInfMDFeInfMunDescargaInfNFe
+            MDFe.infMDFe.infDoc = new TMDFeInfMDFeInfMunDescarga[1]
             {
-                chNFe = NFeRecebida.NFe.infNFe.Id,
-            };
+                new TMDFeInfMDFeInfMunDescarga
+                {
+                    cMunDescarga = NFeRecebida.NFe.infNFe.dest.enderDest.cMun,
+                    xMunDescarga = NFeRecebida.NFe.infNFe.dest.enderDest.xMun,
+                    infNFe = new TMDFeInfMDFeInfMunDescargaInfNFe[1]
+                    {
+                        new TMDFeInfMDFeInfMunDescargaInfNFe
+                        {
+                            chNFe = NFeRecebida.protNFe.infProt.chNFe,
+                        }
+                    }
+                }
 
-            //TMDFeInfMDFeInfMunDescargaInfCTe[] MDFeInfCTeArray = new TMDFeInfMDFeInfMunDescargaInfCTe[1];
-            //TMDFeInfMDFeInfMunDescargaInfCTe MDFeInfCTe = new TMDFeInfMDFeInfMunDescargaInfCTe
-            //{
-            //    // chCTe = chCTeAutorizado // caso seja feito 1 metodo que emite os dois documentos
-            //};
+                //infCTe = new TMDFeInfMDFeInfMunDescargaInfCTe[1]
+                //{ 
+                //    new TMDFeInfMDFeInfMunDescargaInfCTe 
+                //    { 
+                //        chCTe = "CHAVE DO CTE AUTORIZADO"
+                //    } 
+                //},
 
-
-            TMDFeInfMDFeInfMunDescarga[] infMunDescargaArray = new TMDFeInfMDFeInfMunDescarga[1];
-            TMDFeInfMDFeInfMunDescarga infMunDescarga1 = new TMDFeInfMDFeInfMunDescarga
-            {
-                cMunDescarga = NFeRecebida.NFe.infNFe.dest.enderDest.cMun,
-                xMunDescarga = NFeRecebida.NFe.infNFe.dest.enderDest.xMun,
-                infNFe = MDFeInfNFeArray,
-                //infCTe = MDFeInfCTeArray,
+                //infMDFeTransp = new TMDFeInfMDFeInfMunDescargaInfMDFeTransp[1]
+                //{
+                //    new TMDFeInfMDFeInfMunDescargaInfMDFeTransp 
+                //    { 
+                //        chMDFe = "CHAVE DO MDFE AUTORIZADO"
+                //    } }
+                //}
             };
 
             MDFe.infMDFe.prodPred = new TMDFeInfMDFeProdPred
@@ -439,40 +439,42 @@ namespace facilitaTransporte
                 xProd = NFeRecebida.NFe.infNFe.det[0].prod.xProd,
                 cEAN = NFeRecebida.NFe.infNFe.det[0].prod.cEAN,
                 NCM = NFeRecebida.NFe.infNFe.det[0].prod.NCM,
+                infLotacao = new TMDFeInfMDFeProdPredInfLotacao
+                {
+                    infLocalCarrega = new TMDFeInfMDFeProdPredInfLotacaoInfLocalCarrega
+                    {
+                        Items = new string[2] { "-31.776000", "-52.359400" },
+                        ItemsElementName = new NSFacilita_Transporte.src.Classes.MDFe.ItemsChoiceType[]
+                        {
+                            NSFacilita_Transporte.src.Classes.MDFe.ItemsChoiceType.latitude,
+                            NSFacilita_Transporte.src.Classes.MDFe.ItemsChoiceType.longitude
+                        }
+                    },
+                    infLocalDescarrega = new TMDFeInfMDFeProdPredInfLotacaoInfLocalDescarrega
+                    {
+                        Items = new string[2] { "-31.776000", "-52.359400" },
+                        ItemsElementName = new NSFacilita_Transporte.src.Classes.MDFe.ItemsChoiceType1[]
+                        {
+                            NSFacilita_Transporte.src.Classes.MDFe.ItemsChoiceType1.latitude,
+                            NSFacilita_Transporte.src.Classes.MDFe.ItemsChoiceType1.longitude
+                        }
+                    }
+                }
             };
 
             MDFe.infMDFe.tot = new TMDFeInfMDFeTot
             {
-                //qCTe = MDFeInfCTeArray.Length > 0 ? MDFeInfCTeArray.Length.ToString() : "0",
-                qNFe = MDFeInfNFeArray.Length > 0 ? MDFeInfNFeArray.Length.ToString() : "0",
+                //qCTe = MDFe.infMDFe.infDoc[0].infCTe.Length > 0 ? MDFe.infMDFe.infDoc[0].infCTe.Length.ToString() : "0",
+                qNFe = MDFe.infMDFe.infDoc[0].infNFe.Length > 0 ? MDFe.infMDFe.infDoc[0].infNFe.Length.ToString() : "0",
                 vCarga = NFeRecebida.NFe.infNFe.total.ICMSTot.vNF,
                 cUnid = TMDFeInfMDFeTotCUnid.Item01,
-                qCarga = "13000.000",
+                qCarga = "13000.0000",
             };
 
             MDFe.infMDFe.infAdic = new TMDFeInfMDFeInfAdic
             {
                 infCpl = "TESTE DE EMISSAO PARA FINS DE DESENVOLVIMENTO",
             };
-
-            rodoVeicTracaoCondutor[] arrayCondutor = new rodoVeicTracaoCondutor[1];
-            rodoVeicTracaoCondutor Condutor0 = new rodoVeicTracaoCondutor
-            {
-                xNome = "JOAO CARRETEIRO",
-                CPF = "16904541059"
-            };
-
-            arrayCondutor[0] = Condutor0;
-
-            rodoInfANTTInfContratante[] arrayInfContratante = new rodoInfANTTInfContratante[1];
-            rodoInfANTTInfContratante infContratante0 = new rodoInfANTTInfContratante
-            {
-                xNome = "Contratante da Silva",
-                Item = "07364617000135",
-                ItemElementName = NSFacilita_Transporte.src.Classes.MDFe.ItemChoiceType21.CNPJ,
-            };
-
-            arrayInfContratante[0] = infContratante0;
 
             MDFe.infMDFe.infModal = new TMDFeInfMDFeInfModal
             {
@@ -482,8 +484,17 @@ namespace facilitaTransporte
                     infANTT = new rodoInfANTT
                     {
                         RNTRC = "12345678",
-                        infContratante = arrayInfContratante
+                        infContratante = new rodoInfANTTInfContratante[1]
+                        {
+                            new rodoInfANTTInfContratante
+                            {
+                                xNome = "Contratante da Silva",
+                                Item = "07364617000135",
+                                ItemElementName = ItemChoiceType21.CNPJ,
+                            }
+                        }
                     },
+
                     veicTracao = new rodoVeicTracao
                     {
                         cInt = "1",
@@ -494,14 +505,22 @@ namespace facilitaTransporte
                         prop = new rodoVeicTracaoProp
                         {
                             Item = "16904541059",
-                            ItemElementName = NSFacilita_Transporte.src.Classes.MDFe.ItemChoiceType4.CNPJ,
+                            ItemElementName = NSFacilita_Transporte.src.Classes.MDFe.ItemChoiceType4.CPF,
                             RNTRC = "12345678",
                             xNome = "JOAOZINHO CARRETEIRO",
                             IE = "ISENTO",
                             UF = NSFacilita_Transporte.src.Classes.MDFe.TUf.RS,
-                            tpProp = rodoVeicTracaoPropTpProp.Item0
+                            tpProp = rodoVeicTracaoPropTpProp.Item2
                         },
-                        condutor = arrayCondutor,
+
+                        condutor = new rodoVeicTracaoCondutor[1] 
+                        { 
+                            new rodoVeicTracaoCondutor 
+                            {                
+                                xNome = "JOAO CARRETEIRO",
+                                CPF = "16904541059" 
+                            } 
+                        },
                         tpCar = rodoVeicTracaoTpCar.Item00,
                         tpRod = rodoVeicTracaoTpRod.Item06,
                         UF = NSFacilita_Transporte.src.Classes.MDFe.TUf.RS,
@@ -509,11 +528,9 @@ namespace facilitaTransporte
                 }
             };
 
-            string MDFeJSON = JsonConvert.SerializeObject(MDFe);
-            string MDFeXML = mdfeToXML(MDFe); //String do mdfe serializado
-            respostaEmissaoMDFe = NSSuite.emitirMDFeSincrono(MDFeXML, "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte", false, false);
+            string MDFeXML = mdfeToXML(MDFe);
+            respostaEmissaoMDFe = NSSuite.emitirMDFeSincrono(MDFeXML, "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte/MDFe", false, false);
             return respostaEmissaoMDFe;
-
         }
     }
 }
