@@ -834,6 +834,7 @@ public class NSSuite
         EmitirSincronoRetNFCe EmitirSincronoRetNFCe = new EmitirSincronoRetNFCe()
         {
             statusEnvio = statusEnvio,
+            statusEnvio = statusEnvio,
             statusDownload = statusDownload,
             cStat = cStat,
             chNFe = chNFe,
@@ -1279,12 +1280,15 @@ public class NSSuite
                 string pdf = DownloadRespNFCe.pdf;
                 Genericos.salvarPDF(pdf, caminho, nome);
 
-                if (exibeNaTela) Process.Start(caminho + nome + ".pdf"); //apontou um erro aqui. existe outra forma de abrir pdf na tela?
+                if (exibeNaTela)
+                {
+                    Process.Start(caminho + nome + ".pdf"); //apontou um erro aqui. existe outra forma de abrir pdf na tela?
+                }
             }
         }
         else
         {
-            MessageBox.Show("Ocorreu um erro, veja o retorno da API para mais informações");
+            MessageBox.Show("Ocorreu um erro, veja o retorno da API para mais informacoes");
         }
 
         return resposta;

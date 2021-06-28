@@ -14,7 +14,6 @@ namespace facilitaTransporte
         public static string[] emitirDocumentos()
         {
 
-
             // Primeiro passo: obter o xml do documento
             string xmlNFeAutorizada = procurarDocumentos();
 
@@ -36,7 +35,7 @@ namespace facilitaTransporte
         public static string procurarDocumentos()
         {
             string xmlNFe = "";
-            string retorno = DDFeAPI.downloadUnico("07364617000135", "C:/documentosFacilitaTransporte/DDFe", "2", "", "55", "43210600063354950072559200000009331968904734", false,true,false);
+            string retorno = DDFeAPI.downloadUnico("07364617000135", "C:/documentosFacilitaTransporte/DDFe", "2", "", "55", "43210600063354950072559200000009361869741375", false,true,false);
             dynamic respostaJson = JsonConvert.DeserializeObject(retorno);
             xmlNFe = respostaJson.xml;
             return xmlNFe;
@@ -95,7 +94,7 @@ namespace facilitaTransporte
                 natOp = NFeRecebida.NFe.infNFe.ide.natOp,
                 mod = TModCT.Item57,
                 serie = "0",
-                nCT = "2226",
+                nCT = "2229",
                 dhEmi = DateTime.Now.ToString("s") + "-03:00",
                 tpImp = TCTeInfCteIdeTpImp.Item2,
                 tpEmis = TCTeInfCteIdeTpEmis.Item1,
@@ -327,7 +326,7 @@ namespace facilitaTransporte
             };
 
             string CTeXML = cteToXML(CTe); // serializar o xml
-            respostaEmissaoCTe = NSSuite.emitirCTeSincrono(CTeXML, "57", "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte/CTe", false, false);
+            respostaEmissaoCTe = NSSuite.emitirCTeSincrono(CTeXML, "57", "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte/CTe", true, false);
             
             // caso queira informar chCTe no MDFe
             //dynamic respostaEmissaoCTeJSON = JsonConvert.DeserializeObject(respostaEmissaoCTe);
@@ -358,7 +357,7 @@ namespace facilitaTransporte
                 tpTransp = TTransp.TAC,
                 mod = TModMD.Item58,
                 serie = "1",
-                nMDF = "11663",
+                nMDF = "11665",
                 cMDF = "", //passar vazio ou null?
                 cDV = "", //passar vazio ou null?
                 modal = TModalMD.Item1,
@@ -498,7 +497,7 @@ namespace facilitaTransporte
                     veicTracao = new rodoVeicTracao
                     {
                         cInt = "1",
-                        placa = "TFY6586",
+                        placa = "TKY6586",
                         RENAVAM = "87408206662",
                         tara = "8500",
                         capKG = "25000",
@@ -529,7 +528,7 @@ namespace facilitaTransporte
             };
 
             string MDFeXML = mdfeToXML(MDFe);
-            respostaEmissaoMDFe = NSSuite.emitirMDFeSincrono(MDFeXML, "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte/MDFe", false, false);
+            respostaEmissaoMDFe = NSSuite.emitirMDFeSincrono(MDFeXML, "xml", "07364617000135", "XP", "2", "C:/documentosFacilitaTransporte/MDFe", true, false);
             return respostaEmissaoMDFe;
         }
     }
