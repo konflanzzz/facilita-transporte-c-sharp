@@ -10,7 +10,7 @@ using System.Security.Cryptography.X509Certificates;
 
 public class NSSuite
 {
-    private static string token = "4EB15D6DEDAEBAE3FD0B7B5E5B0AD6D4";
+    private static string token = "";
     private static Endpoints Endpoints = new Endpoints();
     private static Parametros Parametros = new Parametros();
 
